@@ -32,6 +32,34 @@ function lintPack(pack: EraPack): Problem[] {
   const eventIds = new Set(pack.timeline.map((e) => e.id));
   const positionIds = new Set(pack.meta.social_positions.map((p) => p.id));
 
+  // --- Review provenance ------------------------------------------------------
+  // "reviewed" must never be an unattributed assertion: a pack the runtime will
+  // play has to say who vouched for it and what that vouching covered.
+  const review = pack.meta.review;
+  if (pack.meta.status === "reviewed") {
+    if (!review) {
+      err("pack/review", 'status is "reviewed" but no review record is present');
+    } else {
+      if (review.spot_checks.length === 0) {
+        warn("pack/review", "review record has no spot checks recorded");
+      }
+      if (review.level === "automated") {
+        warn(
+          "pack/review",
+          "review level is \"automated\" — machine verification only, no expert has read this pack",
+        );
+      }
+      for (const [i, c] of review.spot_checks.entries()) {
+        if (c.result !== "confirmed" && !c.detail) {
+          err(
+            `pack/review/spot_checks[${i}]`,
+            `result is "${c.result}" but no detail explains it`,
+          );
+        }
+      }
+    }
+  }
+
   // --- Sources resolve --------------------------------------------------------
   const checkSources = (where: string, ids: string[]) => {
     for (const id of ids) {
@@ -211,7 +239,8 @@ function main(): void {
       `${pack.timeline.length} events, ${pack.people.length} people, ` +
       `${pack.places.length} places, ${pack.affordances.length} affordances, ` +
       `${pack.sources.length} sources`;
-    console.log(`\n${id} [${pack.meta.status}] — ${counts}`);
+    const level = pack.meta.review ? `/${pack.meta.review.level}` : "";
+    console.log(`\n${id} [${pack.meta.status}${level}] — ${counts}`);
 
     for (const p of errs) console.log(`  ERROR  ${p.where}: ${p.message}`);
     for (const p of warns) console.log(`  warn   ${p.where}: ${p.message}`);

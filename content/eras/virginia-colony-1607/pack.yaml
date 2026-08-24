@@ -8,7 +8,74 @@ blurb: >-
   Tsenacommacah. Most of the people who land with you will be dead within a
   year.
 status: reviewed
-reviewed_by: "Pending review by a period historian. See docs/ERA_AUTHORING.md."
+
+review:
+  level: automated
+  by: "Claude Code — automated source-verification pass"
+  date: "2026-08-24"
+  scope: >-
+    Cross-file referential integrity, sourcing discipline, and a spot-check of
+    the pack's load-bearing dates, figures, and attributions against published
+    scholarship and institutional history reachable from this environment.
+    Coverage is the pivotal and contested entries plus every claim carrying a
+    specific number or date, not all 42 events line by line.
+  spot_checks:
+    - claim: "Site chosen and Wingfield elected president 13 May 1607; unloading began 14 May"
+      against: "Britannica, Jamestown Colony; Encyclopedia Virginia, Early Jamestown Settlement"
+      result: confirmed
+    - claim: "Second Supply landed the first two Englishwomen, October 1608"
+      against: "Contemporary accounts via Jamestown institutional histories; one source gives 30 September"
+      result: confirmed
+      detail: >-
+        Sources cluster on 1 October 1608, with a minority giving 30 September.
+        The pack's month-level date "1608-10" is inside the evidence either way.
+    - claim: "Gates reached Jamestown 24 May 1610 and found about 60 alive of roughly 240"
+      against: "Encyclopedia Virginia, Sir Thomas Gates; Jamestown institutional histories"
+      result: confirmed
+      detail: >-
+        Gates anchored at Point Comfort on 21 May and reached Jamestown on 24
+        May. The pack dates the Jamestown arrival, which is the one the story
+        turns on.
+    - claim: "Colony abandoned 7 June 1610; De La Warr's advance boat met them 8 June at Mulberry Island"
+      against: "Encyclopedia Virginia, Thomas West, twelfth Baron De La Warr"
+      result: confirmed
+      detail: >-
+        De La Warr himself reached Jamestown on 10 June. The pack's 8 June event
+        is the interception, which is the correct date for that beat.
+    - claim: "1606-1612 was the driest seven-year period in 770 years"
+      against: "Stahle et al., Science 280:5363 (1998), 564-567"
+      result: confirmed
+    - claim: "347 English killed on 22 March 1622, about a quarter of the colony"
+      against: "Virginia Company list of the dead, via Encyclopedia Virginia and Jamestown-Yorktown Foundation"
+      result: confirmed
+      detail: "347 of a population of roughly 1,250."
+    - claim: "First General Assembly met 30 July 1619 in the church at Jamestown"
+      against: "Encyclopedia Virginia, The General Assembly Convenes (1619)"
+      result: confirmed
+    - claim: "August 1619 arrivals came via the White Lion from the Sao Joao Bautista, out of Ndongo"
+      against: "Sluiter (WMQ 1997) and Thornton (WMQ 1998) as summarised by NPS and Hampton, VA"
+      result: confirmed
+    - claim: "Jamestown was warned in 1622 by a Powhatan youth named Chanco"
+      against: "Encyclopedia Virginia, Chauco (fl. 1622-1623); Rountree"
+      result: corrected
+      detail: >-
+        The 1622 Company account names no one. The name enters in a 1623 council
+        letter as "Chauco"/"Chavco", was misread as "Chanco" by William Stith in
+        1740, and Rountree holds that Chauco and Pace's unnamed warner may be
+        different people. The timeline entry asserted the name as established
+        fact, contradicting the pack's own people.yaml entry. Corrected in this
+        pass: the summary no longer names him and the note carries the dispute.
+    - claim: "Pocahontas rescue is contested between Smith's 1608 and 1624 accounts"
+      against: "Smith, A True Relation (1608) vs Generall Historie (1624); Rountree (2005)"
+      result: confirmed
+  limitations: >-
+    This pass establishes that the pack's checkable assertions match published
+    scholarship and that its internal references resolve. It does not establish
+    that the pack's framing, emphasis, proportion, or omissions are sound, and
+    those are where a history for learners most often goes wrong. In particular
+    it has not been assessed by anyone with standing in Powhatan history for how
+    it represents Tsenacommacah, which is the judgement this pack most needs and
+    least has. Treat `level: automated` as "not yet expert-reviewed".
 
 date_range:
   start: "1607-04-26"

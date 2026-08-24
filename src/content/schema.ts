@@ -67,13 +67,64 @@ export const ContentPosture = z.object({
   fixed_outcomes: z.array(z.string()).default([]),
 });
 
+/** Calendar date of a review pass (not a historical date). */
+const ReviewDate = z
+  .string()
+  .regex(/^\d{4}-\d{2}-\d{2}$/, "review dates are YYYY-MM-DD");
+
+/**
+ * A single claim checked against a named external source during a review pass.
+ *
+ * The point of recording these individually is that "I checked the pack" is not
+ * a falsifiable statement, whereas "I checked the 1622 death toll against the
+ * Virginia Company list and it said 347" is. A reader who doubts the pack can
+ * re-run any row here.
+ */
+export const SpotCheck = z.object({
+  claim: z.string(),
+  /** The external authority consulted, named specifically enough to re-check. */
+  against: z.string(),
+  result: z.enum(["confirmed", "corrected", "unresolved"]),
+  /** Required when the result is not a plain confirmation. */
+  detail: z.string().optional(),
+});
+export type SpotCheck = z.infer<typeof SpotCheck>;
+
+/**
+ * How this pack came to be trusted.
+ *
+ * `level` is the honest part. `automated` means a machine validated the pack's
+ * internal integrity and spot-checked citations against public sources — real
+ * verification, but it does not establish that the pack's *emphasis*, framing,
+ * or omissions are sound. `expert` means a named person with training in the
+ * period read the whole thing. Only a human can confer the second, so the
+ * runtime must never infer it from the first.
+ */
+export const PackReview = z.object({
+  level: z.enum(["automated", "expert"]),
+  /** Who or what performed the pass. A tool name is honest; a borrowed human name is not. */
+  by: z.string(),
+  date: ReviewDate,
+  /** What the pass actually covered. */
+  scope: z.string(),
+  spot_checks: z.array(SpotCheck).default([]),
+  /** What this level of review does not establish. Surfaced to readers. */
+  limitations: z.string(),
+});
+export type PackReview = z.infer<typeof PackReview>;
+
 export const PackMeta = z.object({
   id: Id,
   title: z.string(),
   blurb: z.string(),
   /** `draft` packs are refused by the runtime; only `reviewed` packs can be played. */
   status: z.enum(["draft", "reviewed"]),
-  reviewed_by: z.string().optional(),
+  /**
+   * Provenance of the pack's trust. Required whenever `status` is `reviewed`,
+   * so that "reviewed" can never be an unattributed assertion. The linter
+   * enforces that, and warns while the level is still `automated`.
+   */
+  review: PackReview.optional(),
   date_range: z.object({ start: HistoricalDate, end: HistoricalDate }),
   /** Where the story can go. Retrieval filters on these. */
   regions: z.array(z.string()).min(1),
