@@ -1,0 +1,652 @@
+# Real people the story may put on the page.
+#
+# `portrayal_limits` is the important field. It marks the line between what a
+# person is attested to have said or done and what a story may plausibly invent
+# for them, and it is written verbatim into the narrator's prompt.
+
+people:
+  # --- Powhatan ------------------------------------------------------------
+  - id: wahunsenacawh
+    name: Wahunsenacawh
+    also_known_as: ["Powhatan", "The Powhatan", "Mamanatowick"]
+    role: Paramount chief (mamanatowick) of Tsenacommacah
+    affiliation: Powhatan paramount chiefdom
+    born: "1547"
+    died: "1618-04"
+    presence:
+      - place_id: werowocomoco
+        from: "1607-04-26"
+        until: "1609"
+      - place_id: orapax
+        from: "1609"
+        until: "1618-04"
+    character: >-
+      A ruler in his sixties who had inherited six districts and acquired some
+      two dozen more by force, marriage and negotiation. Formal, watchful, and
+      accustomed to being obeyed. The English who met him consistently describe
+      a man of great presence who asked precise questions and gave little away.
+      He tested the English for two years as a possible tributary people before
+      concluding they could not be incorporated.
+    portrayal_limits: >-
+      Attested: his questions to Smith about English intentions and weapons, his
+      formal receptions, his relocation of his capital away from the English, his
+      strategy of alternating trade and blockade. Invented dialogue is permitted
+      but must be that of a calculating head of state assessing a small, sickly,
+      badly-led foreign settlement — never a wise elder existing to comment on
+      the English, and never a savage or a simpleton. He is the most powerful
+      person in this story and should read as such.
+    tags: [powhatan, leadership, diplomacy]
+    certainty: established
+    source_ids: [smith-true-relation-1608, smith-map-of-virginia-1612, rountree-three-lives-2005]
+
+  - id: pocahontas
+    name: Amonute
+    also_known_as: ["Matoaka", "Pocahontas", "Rebecca Rolfe"]
+    role: Daughter of Wahunsenacawh
+    affiliation: Powhatan paramount chiefdom
+    born: "1596"
+    died: "1617-03"
+    presence:
+      - place_id: werowocomoco
+        from: "1607-12"
+        until: "1609"
+      - place_id: james-fort
+        from: "1608"
+        until: "1609"
+      - place_id: henrico
+        from: "1613-04"
+        until: "1614-04"
+    character: >-
+      About eleven years old when the English arrive: a favoured daughter among
+      many children, sent with parties bringing food to the fort, remembered by
+      the colonists for turning cartwheels in the marketplace. "Pocahontas" was
+      a childhood nickname, roughly "playful one"; Matoaka was her private name.
+      Later, a hostage, a convert, and an exhibit.
+    portrayal_limits: >-
+      She is a child until 1613. Any scene that renders her as a romantic figure
+      in the Jamestown years is false to the record and must not be written. The
+      rescue of Smith is contested and cannot be asserted. Attested: her visits
+      to the fort with provisioning parties, her role carrying messages, her
+      captivity, baptism, marriage, and death. What she thought about any of it
+      is nowhere recorded, and the narrator should let that silence stand rather
+      than filling it with modern interiority.
+    tags: [powhatan, contact, contested]
+    certainty: established
+    source_ids: [smith-true-relation-1608, hamor-true-discourse-1615, rountree-three-lives-2005]
+
+  - id: opechancanough
+    name: Opechancanough
+    also_known_as: []
+    role: Weroance of the Pamunkey; later paramount chief
+    affiliation: Powhatan paramount chiefdom
+    born: "1554"
+    died: "1646"
+    presence:
+      - place_id: pamunkey-town
+        from: "1607-04-26"
+      - place_id: werowocomoco
+        from: "1607-12"
+        until: "1609"
+    character: >-
+      Wahunsenacawh's younger kinsman, commanding the Pamunkey, the largest
+      fighting force in Tsenacommacah. He captured Smith in 1607 and was
+      humiliated by him in 1609 when Smith seized him by the hair at pistol
+      point before his own men. He waited thirteen years after that and then
+      struck at every English settlement on the river in a single morning.
+    portrayal_limits: >-
+      Attested: the capture of Smith, the 1609 confrontation, his ascendancy
+      after 1618, and the coordinated attacks of 1622 and 1644. He is a patient
+      and formidable strategist who correctly assessed that the English could not
+      be accommodated. Do not write him as motiveless malice; do not soften the
+      1622 attack into something other than what it was.
+    tags: [powhatan, leadership, war]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, rountree-three-lives-2005, rountree-powhatan-1989]
+
+  - id: opitchapam
+    name: Opitchapam
+    also_known_as: ["Itoyatin"]
+    role: Brother of Wahunsenacawh; nominal paramount chief after 1618
+    affiliation: Powhatan paramount chiefdom
+    died: "1630"
+    presence: []
+    character: >-
+      Succeeded his brother in 1618 by the matrilineal rule of succession.
+      Described by the English as lame and of little consequence beside
+      Opechancanough, though that judgement comes from men with reason to
+      simplify Powhatan politics.
+    portrayal_limits: >-
+      Thinly attested. Keep him at the edge of scenes; do not build a
+      personality the sources do not support.
+    tags: [powhatan, leadership]
+    certainty: reconstructed
+    source_ids: [rountree-powhatan-1989, strachey-historie-1612]
+
+  - id: parahunt
+    name: Parahunt
+    also_known_as: ["Tanx Powhatan", "the Little Powhatan"]
+    role: Weroance of the Powhatan town at the falls; son of Wahunsenacawh
+    affiliation: Powhatan paramount chiefdom
+    presence:
+      - place_id: the-falls
+        from: "1607-05-21"
+    character: >-
+      Received Newport's exploring party at the falls in May 1607 with feasting
+      and careful attention to what the English wanted. The English mistook the
+      hospitality for submission and set up a cross claiming the country.
+    portrayal_limits: >-
+      Attested through Archer's account of the May 1607 voyage only. Keep him
+      within that encounter and its aftermath.
+    tags: [powhatan, contact, diplomacy]
+    certainty: established
+    source_ids: [archer-relatyon-1607]
+
+  - id: chanco
+    name: Chanco
+    also_known_as: []
+    role: Powhatan youth living in an English household
+    affiliation: Powhatan
+    presence:
+      - place_id: james-fort
+        from: "1622-03-22"
+    character: >-
+      Living in the household of a colonist named Richard Pace at the time of
+      the 1622 rising, and credited with the warning that let Jamestown itself
+      be defended when the outlying plantations were not.
+    portrayal_limits: >-
+      The warning is attested; the surrounding detail accreted in later
+      retellings, and even the name's attachment to the story is uncertain. Treat
+      the warning as established and any dialogue as reconstructed. Do not use
+      him to suggest that the Powhatan were divided in loyalty as a people.
+    tags: [powhatan, contact, contested]
+    certainty: contested
+    note: >-
+      The identification of the warner as "Chanco" comes from later sources than
+      the event. The warning itself is well attested.
+    source_ids: [smith-generall-historie-1624, virginia-company-records, rountree-powhatan-1989]
+
+  # --- English leadership --------------------------------------------------
+  - id: john-smith
+    name: John Smith
+    also_known_as: ["Captain Smith"]
+    role: Councillor; President of the Council, 1608-1609
+    affiliation: Virginia Company of London
+    born: "1580-01"
+    died: "1631-06"
+    presence:
+      - place_id: james-fort
+        from: "1607-05-14"
+        until: "1609-10"
+      - place_id: werowocomoco
+        from: "1607-12"
+        until: "1608-01-02"
+    character: >-
+      A Lincolnshire farmer's son who had fought in Hungary against the Ottomans
+      and been sold as a slave before he was twenty-six. Abrasive, boastful,
+      physically brave, and the only councillor who took seriously that the
+      colony had to feed itself. The gentlemen despised him for his birth and
+      needed him anyway.
+    portrayal_limits: >-
+      Attested: his arrest at sea, his trading voyages, his captivity, his
+      presidency and its labour rule, his coercive corn-taking, his injury and
+      departure. His own later writing is the main source for his own heroism,
+      and where the 1624 Generall Historie enlarges on the 1608 True Relation
+      the narrator must treat the enlargement as contested. Write him as a man
+      who is usually right and impossible to be around.
+    tags: [english, leadership, contested]
+    certainty: established
+    source_ids: [smith-true-relation-1608, smith-generall-historie-1624, kupperman-jamestown-project-2007]
+
+  - id: edward-maria-wingfield
+    name: Edward Maria Wingfield
+    also_known_as: ["Master Wingfield"]
+    role: First President of the Council, 1607
+    affiliation: Virginia Company of London
+    born: "1550"
+    died: "1631"
+    presence:
+      - place_id: james-fort
+        from: "1607-05-14"
+        until: "1608-04"
+    character: >-
+      The only charter grantee to sail, and the man who decided a palisade would
+      provoke the Powhatan — a judgement that cost lives within a fortnight.
+      Deposed in September 1607 amid accusations of hoarding food. His own
+      defence is the only account from his side and reads as a wounded man's.
+    portrayal_limits: >-
+      Attested: his election, his refusal to fortify, his deposition and the
+      charges. Whether he actually hoarded is contested — the accusation came
+      from men who benefited from believing it.
+    tags: [english, leadership, politics]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, kupperman-jamestown-project-2007]
+
+  - id: christopher-newport
+    name: Christopher Newport
+    also_known_as: ["Captain Newport"]
+    role: Commander of the fleet; master of the supply voyages
+    affiliation: Virginia Company of London
+    born: "1561"
+    died: "1617"
+    presence:
+      - place_id: james-fort
+        from: "1607-05-14"
+        until: "1607-06-22"
+      - place_id: james-fort
+        from: "1608-01-02"
+        until: "1608-04"
+    character: >-
+      A one-armed privateer of great experience, having lost his right arm
+      taking a Spanish prize in 1590. The most competent seaman in the venture
+      and the colony's lifeline: every supply until 1609 arrives under him. He
+      believed in the gold, which cost the colony a planting season.
+    portrayal_limits: >-
+      Attested: his command of the voyages, the missing arm, his diplomacy with
+      the Powhatan including the coronation of Wahunsenacawh in 1608, and the
+      ore cargoes. Keep him at sea or newly arrived; he is not present for most
+      of the colony's suffering.
+    tags: [english, voyage, leadership]
+    certainty: established
+    source_ids: [percy-observations-1608, smith-generall-historie-1624]
+
+  - id: george-percy
+    name: George Percy
+    also_known_as: ["Master Percy"]
+    role: Councillor; President during the Starving Time
+    affiliation: Virginia Company of London
+    born: "1580"
+    died: "1632"
+    presence:
+      - place_id: james-fort
+        from: "1607-05-14"
+        until: "1612"
+    character: >-
+      Eighth son of the Earl of Northumberland, chronically ill, meticulous, and
+      the colony's most careful recorder of its own dying. He commanded during
+      the Starving Time and ordered the killing at Paspahegh. He wrote both
+      down.
+    portrayal_limits: >-
+      Attested through his own two accounts, which are self-exculpatory and
+      should be treated as such. His death-lists for 1607 are the best mortality
+      record we have. Write him as a man of rank documenting a catastrophe he
+      cannot control and does not think is his fault.
+    tags: [english, leadership, chronicler]
+    certainty: established
+    source_ids: [percy-observations-1608, percy-trewe-relacyon-1625]
+
+  - id: bartholomew-gosnold
+    name: Bartholomew Gosnold
+    also_known_as: ["Captain Gosnold"]
+    role: Councillor; captain of the Godspeed
+    affiliation: Virginia Company of London
+    born: "1571"
+    died: "1607-08-22"
+    presence:
+      - place_id: james-fort
+        from: "1607-05-14"
+        until: "1607-08-22"
+    character: >-
+      Had explored New England in 1602 and named Cape Cod. More than any other
+      man he assembled the expedition, recruiting both the gentlemen and Smith.
+      The one councillor trusted across the factions; his death in August 1607
+      removed the only person holding the Council together.
+    portrayal_limits: >-
+      Attested: his role organising the voyage, his command of the Godspeed, his
+      death and ceremonial burial. He is available only between May and August
+      1607 — the canon check will refuse him after that.
+    tags: [english, leadership, voyage]
+    certainty: established
+    source_ids: [percy-observations-1608, kelso-buried-truth-2006]
+
+  - id: john-ratcliffe
+    name: John Ratcliffe
+    also_known_as: ["Captain Ratcliffe", "John Sicklemore"]
+    role: Councillor; President 1607-1608; captain of the Discovery
+    affiliation: Virginia Company of London
+    died: "1609-12"
+    presence:
+      - place_id: james-fort
+        from: "1607-05-14"
+        until: "1609-12"
+    character: >-
+      Took the presidency after Wingfield's deposition and spent the colony's
+      labour building himself a house while men went hungry. Killed in December
+      1609 with most of his party while trading for corn at Orapax during the
+      blockade.
+    portrayal_limits: >-
+      Attested: his presidency, the accusations of misuse of labour, his death.
+      Smith is the main source and disliked him; treat the harshest
+      characterisations as contested.
+    tags: [english, leadership, politics]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, percy-trewe-relacyon-1625]
+
+  - id: thomas-gates
+    name: Sir Thomas Gates
+    also_known_as: ["Sir Thomas"]
+    role: Lieutenant Governor
+    affiliation: Virginia Company of London
+    died: "1622"
+    presence:
+      - place_id: james-fort
+        from: "1610-05-24"
+        until: "1614"
+    character: >-
+      A veteran soldier wrecked on Bermuda for ten months with the colony's
+      charter in his baggage. Arrived to find sixty starving survivors, judged
+      the colony unholdable, and had the discipline to prevent his men burning
+      the fort as they left.
+    portrayal_limits: >-
+      Attested: the wreck, the arrival, the decision to abandon, the guard
+      posted at the gate. Not present in Virginia before May 1610.
+    tags: [english, leadership]
+    certainty: established
+    source_ids: [strachey-historie-1612, percy-trewe-relacyon-1625]
+
+  - id: thomas-west-de-la-warr
+    name: Thomas West, Baron De La Warr
+    also_known_as: ["Lord De La Warr", "the Lord Governor"]
+    role: Governor and Captain General of Virginia
+    affiliation: Virginia Company of London
+    born: "1577"
+    died: "1618"
+    presence:
+      - place_id: james-fort
+        from: "1610-06-10"
+        until: "1611-03"
+    character: >-
+      Arrived a day too late to prevent the abandonment and one day early enough
+      to reverse it. Restored the colony under strict discipline and prosecuted
+      the war against the Powhatan with deliberate destruction of towns and
+      crops. Ill for most of his tenure.
+    portrayal_limits: >-
+      Attested: the interception of the departing ships, the restoration of the
+      settlement, his authorisation of the campaigns of 1610. Not present before
+      June 1610 or after March 1611.
+    tags: [english, leadership, war]
+    certainty: established
+    source_ids: [strachey-historie-1612, percy-trewe-relacyon-1625]
+
+  - id: thomas-dale
+    name: Sir Thomas Dale
+    also_known_as: ["Marshal Dale"]
+    role: Marshal, then Deputy Governor
+    affiliation: Virginia Company of London
+    died: "1619"
+    presence:
+      - place_id: james-fort
+        from: "1611-05"
+        until: "1616"
+      - place_id: henrico
+        from: "1611-09"
+        until: "1616"
+    character: >-
+      A professional soldier from the Dutch wars who governed Virginia as a
+      garrison under the Lawes Divine, Morall and Martiall. Brutal, effective,
+      and the reason the colony stopped collapsing. He founded Henrico and
+      approved Rolfe's marriage.
+    portrayal_limits: >-
+      Attested: the martial code and its punishments, the founding of Henrico,
+      his part in the Pocahontas negotiations. Do not soften the executions; do
+      not pretend the colony would have survived without the order he imposed.
+      Both are true at once.
+    tags: [english, leadership, law]
+    certainty: established
+    source_ids: [virginia-company-records, hamor-true-discourse-1615, horn-land-as-god-made-it-2005]
+
+  # --- English settlers -----------------------------------------------------
+  - id: john-rolfe
+    name: John Rolfe
+    also_known_as: ["Master Rolfe"]
+    role: Planter; Secretary of the colony
+    affiliation: Virginia Company of London
+    born: "1585"
+    died: "1622"
+    presence:
+      - place_id: james-fort
+        from: "1610-05-24"
+        until: "1622"
+      - place_id: varina
+        from: "1614"
+        until: "1622"
+    character: >-
+      Survived the Bermuda wreck, in which his wife and infant daughter died.
+      Introduced sweet Spanish tobacco to Virginia and so gave the colony its
+      economy. Married Pocahontas after writing a long letter agonising over
+      whether he did it for God or for himself. Wrote the two sentences that are
+      our only contemporary record of the first Africans landed in Virginia.
+    portrayal_limits: >-
+      Attested: the wreck and his losses, the tobacco experiments, the 1614
+      letter and marriage, his secretaryship, his 1619 letter. He is a
+      conventional man of his time who twice stood at a hinge of history and
+      seems not to have noticed either time.
+    tags: [english, tobacco, contact]
+    certainty: established
+    source_ids: [rolfe-letter-1614, rolfe-letter-1619, hamor-true-discourse-1615]
+
+  - id: anne-burras
+    name: Anne Burras
+    also_known_as: ["Anne Laydon", "Mistress Laydon"]
+    role: Maidservant; later planter's wife
+    affiliation: Virginia Company of London
+    born: "1594"
+    presence:
+      - place_id: james-fort
+        from: "1608-10"
+    character: >-
+      Arrived at about fourteen as maid to Mistress Forrest, one of two women
+      among some two hundred men. Married John Laydon that December in the
+      colony's first English wedding and bore four daughters. She survived the
+      Starving Time and the 1622 rising, which almost nobody did.
+    portrayal_limits: >-
+      Attested: her arrival, her marriage and children, her survival. Nearly
+      everything about her daily life must be reconstructed from what is known
+      of women's work in the period, and should be flagged as reconstruction
+      rather than asserted. She is the most useful single figure in this pack
+      for showing how thin the record is for women.
+    tags: [english, women, society]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, mccartney-immigrants-2007]
+
+  - id: mistress-forrest
+    name: Mistress Forrest
+    also_known_as: []
+    role: Gentlewoman, wife of Thomas Forrest
+    affiliation: Virginia Company of London
+    presence:
+      - place_id: james-fort
+        from: "1608-10"
+    character: >-
+      One of the first two Englishwomen in Virginia. Her given name is not
+      recorded anywhere. She appears to have died within a year or two of
+      arriving.
+    portrayal_limits: >-
+      Almost nothing is known, including her first name. Do not invent one.
+      Her anonymity in the record is itself worth showing the reader.
+    tags: [english, women]
+    certainty: reconstructed
+    source_ids: [smith-generall-historie-1624, mccartney-immigrants-2007]
+
+  - id: john-laydon
+    name: John Laydon
+    also_known_as: []
+    role: Carpenter; original 1607 colonist
+    affiliation: Virginia Company of London
+    presence:
+      - place_id: james-fort
+        from: "1607-05-14"
+    character: >-
+      A labourer or carpenter who came on the first voyage, married Anne Burras
+      in 1608, and was still alive in the 1625 muster with a wife and four
+      daughters. One of very few men present at the founding to see the colony
+      become established.
+    portrayal_limits: >-
+      Attested: his arrival, marriage, trade and survival. Ordinary in a way
+      that makes him useful — he is what most colonists were, and most of them
+      left no other trace than a line in a muster roll.
+    tags: [english, artisan, society]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, mccartney-immigrants-2007]
+
+  - id: gabriel-archer
+    name: Gabriel Archer
+    also_known_as: []
+    role: Councillor; recorder of the colony
+    affiliation: Virginia Company of London
+    died: "1610"
+    presence:
+      - place_id: james-fort
+        from: "1607-05-14"
+        until: "1608-04"
+      - place_id: james-fort
+        from: "1609-08"
+        until: "1610"
+    character: >-
+      A lawyer by training who wrote the fullest account of the first voyage up
+      the James. Consistently opposed to Smith. Died in the Starving Time; a
+      burial in the church chancel with a Catholic reliquary has been argued to
+      be his.
+    portrayal_limits: >-
+      Attested through his own 1607 relation and the Council disputes. The
+      reliquary identification is contested archaeology, not settled fact.
+    tags: [english, chronicler, politics]
+    certainty: established
+    source_ids: [archer-relatyon-1607, kelso-truth-revealed-2017]
+
+  - id: william-strachey
+    name: William Strachey
+    also_known_as: []
+    role: Secretary of the colony
+    affiliation: Virginia Company of London
+    born: "1572"
+    died: "1621"
+    presence:
+      - place_id: james-fort
+        from: "1610-05-24"
+        until: "1611"
+    character: >-
+      Survived the Bermuda wreck and wrote the account of it that circulated in
+      London. Compiled the largest surviving wordlist of the Powhatan language,
+      which is most of what is known of it.
+    portrayal_limits: >-
+      Attested: the wreck narrative, the secretaryship, the ethnography and
+      wordlist. Present only from May 1610.
+    tags: [english, chronicler, language]
+    certainty: established
+    source_ids: [strachey-historie-1612]
+
+  - id: samuel-argall
+    name: Samuel Argall
+    also_known_as: ["Captain Argall"]
+    role: Sea captain; later Deputy Governor
+    affiliation: Virginia Company of London
+    born: "1580"
+    died: "1626"
+    presence:
+      - place_id: james-fort
+        from: "1609"
+        until: "1619"
+    character: >-
+      Found a shorter northern route across the Atlantic, and seized Pocahontas
+      on the Potomac in 1613 by suborning the Patawomeck with a copper kettle.
+      Governed briefly and was recalled amid accusations of plundering the
+      colony for his own profit.
+    portrayal_limits: >-
+      Attested: the route, the abduction and its method, his governorship and
+      recall. A privateer whose competence and self-dealing were inseparable.
+    tags: [english, voyage, contact]
+    certainty: established
+    source_ids: [hamor-true-discourse-1615, rountree-three-lives-2005]
+
+  - id: george-yeardley
+    name: Sir George Yeardley
+    also_known_as: ["Governor Yeardley"]
+    role: Governor of Virginia
+    affiliation: Virginia Company of London
+    born: "1587"
+    died: "1627"
+    presence:
+      - place_id: james-fort
+        from: "1610-05-24"
+        until: "1627"
+    character: >-
+      Came ashore from the Bermuda wreck as a young officer and rose to
+      governor. Called the first General Assembly in 1619 under the Company's
+      new instructions, and in the same month acquired most of the Africans
+      landed at Point Comfort for his own plantation.
+    portrayal_limits: >-
+      Attested: his arrival, his governorship, the calling of the Assembly, his
+      acquisition of Africans in 1619. Those last two facts belong in the same
+      breath and the narrative should not separate them.
+    tags: [english, leadership, government, slavery]
+    certainty: established
+    source_ids: [assembly-proceedings-1619, rolfe-letter-1619, horn-1619-2018]
+
+  - id: john-pory
+    name: John Pory
+    also_known_as: []
+    role: Secretary of the colony; Speaker of the first Assembly
+    affiliation: Virginia Company of London
+    born: "1572"
+    died: "1636"
+    presence:
+      - place_id: james-fort
+        from: "1619-04"
+        until: "1621"
+    character: >-
+      A Cambridge-educated geographer and translator, fond of drink and gossip,
+      who kept the minutes of the 1619 Assembly. His record is why we know what
+      was said.
+    portrayal_limits: >-
+      Attested: his clerkship and the proceedings he recorded, and his letters
+      home describing colonial society with a sharp and slightly appalled eye.
+    tags: [english, government, chronicler]
+    certainty: established
+    source_ids: [assembly-proceedings-1619, horn-1619-2018]
+
+  - id: edwin-sandys
+    name: Sir Edwin Sandys
+    also_known_as: []
+    role: Treasurer of the Virginia Company
+    affiliation: Virginia Company of London
+    born: "1561"
+    died: "1629"
+    presence: []
+    character: >-
+      Ran the Company from London after 1618 and drove the reforms that produced
+      the headright system, the Assembly, and the mass transport of servants and
+      women. His programme sent thousands of people to Virginia; most of them
+      died there.
+    portrayal_limits: >-
+      Attested through the Company records. He never crossed the Atlantic and
+      cannot appear in Virginia — only in London scenes, letters, and
+      instructions read aloud at Jamestown.
+    tags: [english, company, policy, london]
+    certainty: established
+    source_ids: [virginia-company-records, horn-1619-2018]
+
+  # --- Africans in Virginia -------------------------------------------------
+  - id: angelo
+    name: Angelo
+    also_known_as: ["Angela"]
+    role: Woman taken from Ndongo; held in the household of William Peirce
+    affiliation: Ndongo
+    presence:
+      - place_id: james-fort
+        from: "1619-08"
+    character: >-
+      Arrived on the Treasurer in 1619 and appears in the 1625 muster of
+      Jamestown, listed in William Peirce's household by name and with no age,
+      no origin, and no status recorded beside it. Excavation of the Peirce lot
+      has been undertaken specifically to recover something of how she lived.
+    portrayal_limits: >-
+      Her name, her ship, and her presence in a named household are attested.
+      Everything else is unrecorded. Do not invent a biography, a voice, or an
+      inner reconciliation with her condition. Her appearance in the record as a
+      single line in a muster is the historical fact worth showing, and the
+      ledger should say so plainly.
+    tags: [africa, slavery, women, society]
+    certainty: established
+    note: >-
+      Spelled "Angelo" in the 1625 muster; commonly modernised to "Angela".
+    source_ids: [virginia-company-records, thornton-african-experience-1998, horn-1619-2018]

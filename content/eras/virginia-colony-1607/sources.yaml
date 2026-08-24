@@ -1,0 +1,256 @@
+# Sources backing every claim in this pack.
+# `reliability` is not a formality: each primary account here was written by a
+# participant with an interest in how the story landed, and the narrator is told
+# to treat their self-serving passages as contested rather than settled.
+
+sources:
+  # --- Primary: English accounts -------------------------------------------
+  - id: smith-true-relation-1608
+    kind: primary
+    title: A True Relation of Such Occurrences and Accidents of Noate as Hath Hapned in Virginia
+    author: John Smith
+    year: "1608"
+    reliability: >-
+      Smith's earliest account, written in Virginia and printed in London without
+      his supervision. Closest to events of any English source. Critically, it
+      describes his December 1607 captivity among the Powhatan WITHOUT the
+      Pocahontas rescue — the omission is the central reason historians treat the
+      1624 rescue story as doubtful.
+
+  - id: smith-map-of-virginia-1612
+    kind: primary
+    title: A Map of Virginia, with a Description of the Countrey
+    author: John Smith
+    year: "1612"
+    reliability: >-
+      Smith's ethnography and cartography of Tsenacommacah. The map is
+      remarkably accurate and remains a principal source for Powhatan settlement
+      geography. The descriptive matter is observant but filtered through an
+      Englishman with a colonial project to justify.
+
+  - id: smith-generall-historie-1624
+    kind: primary
+    title: The Generall Historie of Virginia, New-England, and the Summer Isles
+    author: John Smith
+    year: "1624"
+    reliability: >-
+      Written seventeen years after the founding, while Smith was seeking
+      patronage and defending his reputation. Contains detail found nowhere else,
+      including the Pocahontas rescue. Use with caution: where it enlarges
+      Smith's own role beyond his earlier accounts, treat it as contested.
+
+  - id: percy-observations-1608
+    kind: primary
+    title: Observations Gathered out of a Discourse of the Plantation of the Southerne Colonie in Virginia
+    author: George Percy
+    year: "1608"
+    reliability: >-
+      Percy sailed with the first voyage and wrote the fullest surviving account
+      of the 1607 landing and the first summer's mortality. A younger son of the
+      Earl of Northumberland, hostile to Smith. His death-by-death record of the
+      1607 sickness is the closest thing to a mortality register the colony has.
+
+  - id: percy-trewe-relacyon-1625
+    kind: primary
+    title: A Trewe Relacyon of the Proceedings and Occurentes of Momente which have Hapned in Virginia
+    author: George Percy
+    year: "c. 1625"
+    reliability: >-
+      Percy's answer to Smith's Generall Historie, written to defend his own
+      conduct as president during the Starving Time. Our most direct testimony
+      for the winter of 1609-10, including the cannibalism reports, and for the
+      1610 Paspahegh massacre, which Percy commanded and describes plainly.
+      Self-exculpatory throughout.
+
+  - id: strachey-historie-1612
+    kind: primary
+    title: The Historie of Travell into Virginia Britania
+    author: William Strachey
+    year: "1612"
+    reliability: >-
+      Strachey was secretary of the colony and survived the Sea Venture wreck.
+      Preserves the largest surviving Virginia Algonquian wordlist and detailed
+      description of Powhatan society. Much is borrowed silently from Smith;
+      the ethnographic passages are nonetheless first-hand.
+
+  - id: archer-relatyon-1607
+    kind: primary
+    title: A Relatyon of the Discovery of our River from James Forte into the Maine
+    author: Gabriel Archer
+    year: "1607"
+    reliability: >-
+      A day-by-day record of the first exploration up the James in May-June 1607,
+      written within weeks. Excellent for the specific texture of first contact.
+
+  - id: hamor-true-discourse-1615
+    kind: primary
+    title: A True Discourse of the Present Estate of Virginia
+    author: Ralph Hamor
+    year: "1615"
+    reliability: >-
+      Colony secretary. The principal source for the capture of Pocahontas, her
+      marriage to Rolfe, and the peace that followed. Written as promotional
+      literature for the Virginia Company — its optimism is a sales posture.
+
+  - id: rolfe-letter-1614
+    kind: primary
+    title: Letter to Sir Thomas Dale Regarding His Intended Marriage
+    author: John Rolfe
+    year: "1614"
+    reliability: >-
+      Rolfe's own justification for marrying Pocahontas, agonizing over whether
+      it served God or his own desire. Unusually candid about English anxieties
+      concerning intermarriage and conversion.
+
+  - id: rolfe-letter-1619
+    kind: primary
+    title: Letter to Sir Edwin Sandys Reporting the Arrival of the White Lion
+    author: John Rolfe
+    year: "1619"
+    reliability: >-
+      The only contemporary English record of the August 1619 arrival of the
+      first documented Africans in Virginia — the "20. and odd Negroes" passage.
+      Two sentences long, and nearly everything contested about 1619 turns on
+      how they are read.
+
+  - id: virginia-company-records
+    kind: primary
+    title: Records of the Virginia Company of London
+    author: Susan Myra Kingsbury (ed.)
+    year: "1906-1935"
+    reliability: >-
+      The Company's own minutes, charters, instructions and correspondence.
+      Authoritative for policy, land grants, the headright system, and the 1619
+      Assembly. Silent or evasive where the Company's conduct was indefensible.
+
+  - id: assembly-proceedings-1619
+    kind: primary
+    title: Proceedings of the First Assembly of Virginia
+    author: John Pory (clerk)
+    year: "1619"
+    reliability: >-
+      Pory's minutes of the July 1619 Assembly at Jamestown church. A verbatim
+      record of the first representative assembly in English America, including
+      its debates over tobacco prices, and its treatment of the Indigenous.
+
+  # --- Archaeological and scientific ----------------------------------------
+  - id: kelso-buried-truth-2006
+    kind: archaeological
+    title: "Jamestown: The Buried Truth"
+    author: William M. Kelso
+    year: "2006"
+    reliability: >-
+      Director of the Jamestown Rediscovery excavation that located James Fort in
+      1994, overturning the long assumption that the site had eroded into the
+      river. The material basis for nearly everything this pack says about the
+      fort's construction, diet, and material culture.
+
+  - id: kelso-truth-revealed-2017
+    kind: archaeological
+    title: "Jamestown, the Truth Revealed"
+    author: William M. Kelso
+    year: "2017"
+    reliability: >-
+      Updates the 2006 findings with two further decades of excavation,
+      including the church burials, the 1608 well, and the Starving Time cellar.
+
+  - id: owsley-jane-2013
+    kind: archaeological
+    title: Forensic Analysis of Human Remains from the Starving Time Cellar ("Jane")
+    author: Douglas Owsley et al., Smithsonian Institution
+    year: "2013"
+    reliability: >-
+      Forensic examination of the partial remains of a girl of roughly fourteen,
+      recovered from a Starving Time refuse deposit. Cut marks to the cranium,
+      mandible and tibia are consistent with dismemberment for consumption. This
+      is what moved survival cannibalism at Jamestown from rumour to evidence.
+
+  - id: stahle-drought-1998
+    kind: scientific
+    title: "The Lost Colony and Jamestown Droughts"
+    author: David W. Stahle et al., Science vol. 280
+    year: "1998"
+    reliability: >-
+      Bald cypress tree-ring reconstruction showing that 1606-1612 was the driest
+      seven-year period in the region in 770 years. Independent physical evidence
+      that reframes the colony's famine and the strain on Powhatan food surpluses
+      as a shared environmental crisis, not simply English incompetence.
+
+  # --- Secondary ------------------------------------------------------------
+  - id: rountree-powhatan-1989
+    kind: secondary
+    title: "The Powhatan Indians of Virginia: Their Traditional Culture"
+    author: Helen C. Rountree
+    year: "1989"
+    reliability: >-
+      The standard ethnohistory of Tsenacommacah, reading the English sources
+      against Algonquian ethnography. The principal corrective to accounts that
+      treat the Powhatan as scenery in an English story.
+
+  - id: rountree-three-lives-2005
+    kind: secondary
+    title: "Pocahontas, Powhatan, Opechancanough: Three Indian Lives Changed by Jamestown"
+    author: Helen C. Rountree
+    year: "2005"
+    reliability: >-
+      Reconstructs the period from the Powhatan side. The source for this pack's
+      treatment of Wahunsenacawh's strategy and of Pocahontas as a child in 1607
+      rather than the adult of later legend.
+
+  - id: horn-land-as-god-made-it-2005
+    kind: secondary
+    title: "A Land as God Made It: Jamestown and the Birth of America"
+    author: James Horn
+    year: "2005"
+    reliability: >-
+      Reliable narrative synthesis of the colony's first two decades, careful
+      about the limits of the sources.
+
+  - id: horn-1619-2018
+    kind: secondary
+    title: "1619: Jamestown and the Forging of American Democracy"
+    author: James Horn
+    year: "2018"
+    reliability: >-
+      Treats the Assembly and the arrival of the first Africans as a single year's
+      entangled events. Useful precisely because it refuses to narrate one
+      without the other.
+
+  - id: kupperman-jamestown-project-2007
+    kind: secondary
+    title: The Jamestown Project
+    author: Karen Ordahl Kupperman
+    year: "2007"
+    reliability: >-
+      Places Jamestown in its Atlantic and English context, and is the best
+      account of why the colony's leadership structure failed so badly in 1607.
+
+  - id: sluiter-20-and-odd-1997
+    kind: secondary
+    title: "New Light on the '20. and Odd Negroes' Arriving in Virginia, August 1619"
+    author: Engel Sluiter, William and Mary Quarterly
+    year: "1997"
+    reliability: >-
+      Established from Spanish and Portuguese records that the Africans landed at
+      Point Comfort had been taken by English privateers from the Portuguese slave
+      ship Sao Joao Bautista, bound for Vera Cruz.
+
+  - id: thornton-african-experience-1998
+    kind: secondary
+    title: "The African Experience of the '20. and Odd Negroes' Arriving in Virginia in 1619"
+    author: John Thornton, William and Mary Quarterly
+    year: "1998"
+    reliability: >-
+      Identifies their origin in the kingdom of Ndongo in West Central Africa and
+      reconstructs how the Portuguese wars there produced these specific captives.
+      The reason this pack can name where they came from rather than treating
+      them as anonymous.
+
+  - id: mccartney-immigrants-2007
+    kind: secondary
+    title: "Virginia Immigrants and Adventurers, 1607-1635: A Biographical Dictionary"
+    author: Martha W. McCartney
+    year: "2007"
+    reliability: >-
+      Prosopography of named colonists. Used here to keep minor figures' dates
+      and roles accurate.

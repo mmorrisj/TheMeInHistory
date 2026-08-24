@@ -1,0 +1,452 @@
+# Places the story can reach, with travel times in hours by the means actually
+# available. The canon check uses `exists_from` / `exists_until` to refuse
+# scenes set somewhere that did not yet exist or no longer did.
+
+places:
+  - id: jamestown-island
+    name: Jamestown Island
+    also_known_as: ["James Citty", "the Island"]
+    region: james-river
+    kind: landmark
+    description: >-
+      A low peninsula of some 1,500 acres joined to the north bank by a narrow
+      isthmus, about fifty miles up the James from the Chesapeake. Chosen because
+      a ship of burden could moor to the trees in six fathoms and because it
+      could be defended against Spanish attack from the sea. Uninhabited when
+      the English arrived, and the Paspahegh had good reason for that: the
+      ground is marsh, the water brackish on the tide, and the mosquitoes
+      relentless from May to October.
+    sensory:
+      - "Standing water under the trees, and the smell of it in August."
+      - "Mosquitoes in clouds thick enough to make men sleep under smoke."
+      - "The river running wide and brown, tidal, a mile across at the island."
+      - "Cypress knees and reeds along the shallows."
+    routes:
+      - to: james-river-mouth
+        hours: 12
+        means: shallop under sail and oar
+      - to: paspahegh
+        hours: 3
+        means: on foot along the riverbank
+      - to: werowocomoco
+        hours: 30
+        means: shallop, down the James and up the Pamunkey
+    exists_from: "1607-05-13"
+    tags: [settlement, marsh, river]
+    certainty: established
+    source_ids: [percy-observations-1608, archer-relatyon-1607, kelso-buried-truth-2006]
+
+  - id: james-fort
+    name: James Fort
+    also_known_as: ["the Fort", "James Towne"]
+    region: james-river
+    kind: fortification
+    description: >-
+      A triangular palisade of split logs enclosing about an acre, with a
+      half-moon bulwark at each corner mounting cannon. The river face runs some
+      140 yards, the two land faces about 100 each. Inside: a storehouse, a
+      church, a guardhouse, a row of mud-and-stud houses with thatched roofs,
+      and later a well sunk in 1608 that within two years was fouled enough to be
+      used as a rubbish pit. The whole colony's population lives, argues, sickens
+      and dies inside this triangle.
+    sensory:
+      - "Woodsmoke and the sourness of unwashed men living close together."
+      - "The bell for prayers twice a day and the drum for the watch."
+      - "Green wood shrinking in the palisade, leaving gaps a man could see through."
+      - "Rats in the storehouse thatch."
+    routes:
+      - to: glasshouse
+        hours: 1
+        means: on foot across the isthmus
+      - to: paspahegh
+        hours: 3
+        means: on foot
+      - to: jamestown-church
+        hours: 0.1
+        means: on foot within the palisade
+      - to: weyanoke
+        hours: 8
+        means: shallop upriver
+      - to: werowocomoco
+        hours: 30
+        means: shallop, down the James and up the Pamunkey
+      - to: kecoughtan
+        hours: 14
+        means: shallop downriver
+      - to: point-comfort
+        hours: 14
+        means: shallop downriver
+      - to: martins-hundred
+        hours: 3
+        means: shallop downriver
+      - to: henrico
+        hours: 22
+        means: shallop upriver
+      - to: the-falls
+        hours: 26
+        means: shallop upriver
+      - to: chickahominy-river
+        hours: 6
+        means: shallop up the Chickahominy
+      - to: mulberry-island
+        hours: 4
+        means: shallop downriver
+    exists_from: "1607-06-15"
+    tags: [fortification, settlement, daily-life]
+    certainty: established
+    source_ids: [kelso-buried-truth-2006, kelso-truth-revealed-2017, percy-observations-1608]
+
+  - id: jamestown-church
+    name: The Church at Jamestown
+    also_known_as: ["the church"]
+    region: james-river
+    kind: building
+    description: >-
+      Rebuilt several times after the 1608 fire. By 1619 a timber church some
+      fifty by twenty feet, with a chancel where four of the colony's leading men
+      were buried under the floor. In July 1619 the first representative assembly
+      in English America sat in its choir for five days, in August heat, with the
+      governor in a chair at the front.
+    sensory:
+      - "Earth floor, plain benches, no glass in the windows."
+      - "Heat under a thatched roof in July."
+    routes: []
+    exists_from: "1608"
+    tags: [religion, government, building]
+    certainty: established
+    source_ids: [kelso-truth-revealed-2017, assembly-proceedings-1619]
+
+  - id: glasshouse
+    name: The Glasshouse
+    also_known_as: []
+    region: james-river
+    kind: building
+    description: >-
+      A furnace built in 1608 about a mile from the fort, where Polish and German
+      craftsmen brought on the Second Supply tried to make glass for export. It
+      produced very little and was abandoned, then briefly revived in 1621. The
+      Company's search for any saleable commodity before tobacco runs through
+      this building.
+    sensory:
+      - "Heat from the furnace, and the smell of woodash and sand."
+      - "Foreign speech — Polish and German — outside the English chain of command."
+    routes:
+      - to: james-fort
+        hours: 1
+        means: on foot
+    exists_from: "1608-10"
+    tags: [industry, craft, company]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, kelso-buried-truth-2006]
+
+  - id: paspahegh
+    name: Paspahegh
+    also_known_as: []
+    region: james-river
+    kind: settlement
+    description: >-
+      The principal town of the Paspahegh, whose territory included the island
+      the English built on. Perhaps forty warriors and their families in
+      bark-and-mat houses among cleared fields of maize, beans and squash. The
+      nearest Powhatan community to the fort, and the first destroyed: Percy
+      burned the town and its standing corn in August 1610 and the Paspahegh
+      disappear from the record as a people thereafter.
+    sensory:
+      - "Cleared fields with maize standing between the stumps."
+      - "Yehakins of bent saplings covered with bark and reed mats."
+      - "Smoke holes, and fires kept low inside."
+    routes:
+      - to: james-fort
+        hours: 3
+        means: on foot
+    exists_from: "1607-04-26"
+    exists_until: "1610-08"
+    tags: [powhatan, settlement, agriculture]
+    certainty: established
+    source_ids: [archer-relatyon-1607, percy-trewe-relacyon-1625, rountree-powhatan-1989]
+
+  - id: werowocomoco
+    name: Werowocomoco
+    also_known_as: []
+    region: york-river
+    kind: settlement
+    description: >-
+      Wahunsenacawh's principal residence on the north bank of the Pamunkey,
+      about fifteen miles from Jamestown overland and considerably further by
+      water. A large town with a great house where the mamanatowick received
+      visitors on a raised platform, hung with mats and attended by his wives
+      and councillors. Occupied for centuries before the English arrived; the
+      site was identified archaeologically at Purtan Bay in 2003. Wahunsenacawh
+      moved his capital away to Orapax in 1609 to put distance between himself
+      and the English.
+    sensory:
+      - "A long house of bent saplings and mats, dim, with a fire down the centre."
+      - "Ranks of attendants standing in silence while the mamanatowick speaks."
+      - "The smell of tobacco burned as offering, sharp and unlike the English sort."
+    routes:
+      - to: jamestown-island
+        hours: 30
+        means: shallop
+      - to: pamunkey-town
+        hours: 8
+        means: canoe upriver
+    exists_from: "1607-04-26"
+    exists_until: "1609"
+    tags: [powhatan, capital, diplomacy]
+    certainty: established
+    source_ids: [smith-true-relation-1608, smith-map-of-virginia-1612, rountree-powhatan-1989]
+
+  - id: orapax
+    name: Orapax
+    also_known_as: []
+    region: york-river
+    kind: settlement
+    description: >-
+      The town at the head of the Chickahominy to which Wahunsenacawh moved his
+      residence in 1609, deliberately further from the English. Ratcliffe and
+      most of his party were killed here in December 1609 while trading for corn.
+    sensory: []
+    routes: []
+    exists_from: "1609"
+    tags: [powhatan, capital]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, rountree-powhatan-1989]
+
+  - id: pamunkey-town
+    name: The Pamunkey Towns
+    also_known_as: []
+    region: york-river
+    kind: settlement
+    description: >-
+      The heartland of the Pamunkey, the largest and most powerful district in
+      Tsenacommacah, under Opechancanough. Several hundred fighting men, the
+      confederation's principal military strength, on the river that bears their
+      name.
+    sensory: []
+    routes: []
+    exists_from: "1607-04-26"
+    tags: [powhatan, settlement, war]
+    certainty: established
+    source_ids: [smith-map-of-virginia-1612, rountree-powhatan-1989]
+
+  - id: kecoughtan
+    name: Kecoughtan
+    also_known_as: []
+    region: chesapeake-bay
+    kind: settlement
+    description: >-
+      A Powhatan town at the mouth of the James near Point Comfort, where the
+      English were fed and entertained in 1607 and from which they traded corn in
+      the autumn. Attacked and taken by the English in July 1610; the survivors
+      were driven off and the site became an English settlement.
+    sensory: []
+    routes:
+      - to: jamestown-island
+        hours: 14
+        means: shallop
+    exists_from: "1607-04-30"
+    exists_until: "1610-07"
+    tags: [powhatan, trade, settlement]
+    certainty: established
+    source_ids: [percy-observations-1608, rountree-powhatan-1989]
+
+  - id: weyanoke
+    name: Weyanoke
+    also_known_as: []
+    region: james-river
+    kind: settlement
+    description: >-
+      A Powhatan town upriver from Jamestown that traded maize to the English in
+      the autumn of 1607, in a year when the drought made that surplus dear.
+    sensory: []
+    routes:
+      - to: jamestown-island
+        hours: 8
+        means: shallop upriver
+    exists_from: "1607-04-26"
+    tags: [powhatan, trade, agriculture]
+    certainty: established
+    source_ids: [smith-true-relation-1608, archer-relatyon-1607]
+
+  - id: arrohateck
+    name: Arrohateck
+    also_known_as: []
+    region: james-river
+    kind: settlement
+    description: >-
+      A town on the upper James where Newport's party was received in May 1607,
+      between Weyanoke and the falls.
+    sensory: []
+    routes: []
+    exists_from: "1607-05-21"
+    tags: [powhatan, contact]
+    certainty: established
+    source_ids: [archer-relatyon-1607]
+
+  - id: the-falls
+    name: The Falls of the James
+    also_known_as: ["Powhatan town at the falls"]
+    region: james-river
+    kind: landmark
+    description: >-
+      The head of navigation, where the river breaks over rock and no ship can
+      pass. Newport set up a cross here in May 1607 claiming the country for
+      James I, telling Parahunt that the two arms of the cross signified himself
+      and Parahunt joined in league. Later the site of Henrico.
+    sensory:
+      - "White water over rock, loud enough to talk over."
+    routes:
+      - to: jamestown-island
+        hours: 26
+        means: shallop upriver
+    exists_from: "1607-05-24"
+    tags: [powhatan, contact, landmark]
+    certainty: established
+    source_ids: [archer-relatyon-1607]
+
+  - id: chickahominy-river
+    name: The Chickahominy River
+    also_known_as: []
+    region: james-river
+    kind: waterway
+    description: >-
+      A tributary of the James running through the territory of the Chickahominy,
+      who were governed by a council of elders rather than a weroance and were
+      never fully subject to Wahunsenacawh. Smith was taken on this river in
+      December 1607 while seeking corn.
+    sensory:
+      - "Narrow water under overhanging trees, marsh on both sides."
+    routes: []
+    exists_from: "1607-04-26"
+    tags: [powhatan, waterway, contact]
+    certainty: established
+    source_ids: [smith-true-relation-1608, rountree-powhatan-1989]
+
+  - id: james-river-mouth
+    name: The Mouth of the James
+    also_known_as: ["Hampton Roads"]
+    region: chesapeake-bay
+    kind: waterway
+    description: >-
+      Where the James meets the Chesapeake. Every ship from England passes here,
+      and it is where news arrives first.
+    sensory: []
+    routes:
+      - to: jamestown-island
+        hours: 12
+        means: shallop upriver
+    exists_from: "1607-04-26"
+    tags: [waterway, arrival]
+    certainty: established
+    source_ids: [percy-observations-1608]
+
+  - id: point-comfort
+    name: Point Comfort
+    also_known_as: ["Old Point Comfort", "Fort Algernon"]
+    region: chesapeake-bay
+    kind: fortification
+    description: >-
+      The English watch-post at the mouth of the James, fortified in 1609 as Fort
+      Algernon. Its garrison ate well on crabs and sturgeon through the Starving
+      Time while the fort upriver starved. In August 1619 the White Lion put in
+      here and landed the first documented Africans in English North America.
+    sensory:
+      - "Open water and wind, unlike the closed air of the fort upriver."
+    routes:
+      - to: jamestown-island
+        hours: 14
+        means: shallop upriver
+    exists_from: "1609-09"
+    tags: [fortification, arrival, slavery]
+    certainty: established
+    source_ids: [percy-trewe-relacyon-1625, rolfe-letter-1619, horn-1619-2018]
+
+  - id: cape-henry
+    name: Cape Henry
+    also_known_as: []
+    region: chesapeake-bay
+    kind: landmark
+    description: >-
+      The southern headland of the Chesapeake entrance, where the fleet made
+      landfall on 26 April 1607 and where the shore party was attacked the same
+      night. A cross was set up here before the ships moved upriver.
+    sensory:
+      - "Sand and low pine after four months of nothing but sea."
+    routes: []
+    exists_from: "1607-04-26"
+    tags: [arrival, contact, landmark]
+    certainty: established
+    source_ids: [percy-observations-1608, archer-relatyon-1607]
+
+  - id: mulberry-island
+    name: Mulberry Island
+    also_known_as: []
+    region: james-river
+    kind: landmark
+    description: >-
+      A bend in the James some fourteen miles below Jamestown, where on 8 June
+      1610 the abandoning colonists met the longboat from De La Warr's fleet and
+      were turned back.
+    sensory: []
+    routes: []
+    exists_from: "1607-05-13"
+    tags: [landmark, reversal]
+    certainty: established
+    source_ids: [strachey-historie-1612]
+
+  - id: henrico
+    name: Henrico
+    also_known_as: ["Henricus"]
+    region: james-river
+    kind: settlement
+    description: >-
+      Founded by Dale in 1611 on higher, healthier ground far upriver — an
+      attempt to build the colony somewhere that was not a marsh. Pocahontas was
+      held here during her captivity. Largely destroyed in the 1622 rising.
+    sensory:
+      - "Dry ground and better air than the island, which everyone remarks on."
+    routes:
+      - to: jamestown-island
+        hours: 22
+        means: shallop upriver
+    exists_from: "1611-09"
+    tags: [settlement, plantation]
+    certainty: established
+    source_ids: [hamor-true-discourse-1615, virginia-company-records]
+
+  - id: varina
+    name: Varina Farms
+    also_known_as: []
+    region: james-river
+    kind: settlement
+    description: >-
+      John Rolfe's plantation near Henrico, where he grew the Spanish tobacco
+      that made the colony's fortune, and where he lived with Pocahontas after
+      their marriage.
+    sensory:
+      - "Tobacco hanging to cure in an open-sided shed."
+    routes: []
+    exists_from: "1614"
+    tags: [tobacco, plantation]
+    certainty: established
+    source_ids: [hamor-true-discourse-1615]
+
+  - id: martins-hundred
+    name: Martin's Hundred
+    also_known_as: ["Wolstenholme Towne"]
+    region: james-river
+    kind: settlement
+    description: >-
+      A private plantation seven miles below Jamestown, settled from 1618. About
+      half its people were killed in the 1622 rising. Excavated in the 1970s, and
+      the source of much of what is known about how ordinary Virginia planters
+      actually lived.
+    sensory: []
+    routes:
+      - to: jamestown-island
+        hours: 3
+        means: shallop downriver
+    exists_from: "1618"
+    tags: [plantation, settlement, violence]
+    certainty: established
+    source_ids: [virginia-company-records, mccartney-immigrants-2007]

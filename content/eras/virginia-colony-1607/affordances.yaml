@@ -1,0 +1,427 @@
+# How a modern person's skills, traits and interests land in Virginia, 1607.
+#
+# `translation` is shown to the player at character creation. It is the moment
+# the app earns its name: a modern trait is not rejected and not naively
+# imported, it is translated, and the translation teaches something about the
+# period that no amount of exposition would.
+
+affordances:
+  # --- Skills ---------------------------------------------------------------
+  - tag: skill.medicine
+    era_name: "physic, or surgery — and they are different trades of different rank"
+    plausibility:
+      gentleman: uncommon
+      artisan: uncommon
+      labourer: implausible
+      soldier: rare
+      woman-settler: common
+    enables: [treat-wounds, identify-illness, access-to-sick-house]
+    social_reading: >-
+      A physician is a university man and there is not one in the colony; a
+      surgeon is a craftsman who cuts, sets bones and is paid less than a
+      carpenter. Women's healing knowledge is real, constant, and never called a
+      skill by anyone writing it down.
+    translation: >-
+      What you know of medicine arrives in a world with no germ theory, no
+      anaesthetic and no antibiotics. You can clean a wound, set a bone, judge
+      who is dying, and keep the water clean — and that last will save more
+      lives here than everything else you know combined, though you will not be
+      able to explain why in terms anyone accepts.
+    certainty: established
+    source_ids: [percy-observations-1608, kupperman-jamestown-project-2007]
+
+  - tag: skill.chemistry
+    era_name: "alchemy, or the assayer's art"
+    plausibility:
+      gentleman: uncommon
+      artisan: rare
+      labourer: implausible
+      soldier: implausible
+      woman-settler: rare
+    enables: [assay-ore, make-medicines, glasshouse-access]
+    social_reading: >-
+      Respectable as natural philosophy and suspect as magic, often in the same
+      room. In 1608 the colony has two goldsmiths and a great deal of worthless
+      mica, and a man who can say so with authority is either invaluable or
+      deeply unwelcome.
+    translation: >-
+      Your chemistry becomes the assayer's art. You are the person who can tell
+      the Council that the glittering ore they have loaded aboard Newport's ship
+      is not gold. Being right about this will not make you popular; the entire
+      venture is staked on it being gold.
+    certainty: established
+    source_ids: [smith-generall-historie-1624, kelso-buried-truth-2006]
+
+  - tag: skill.carpentry
+    era_name: "the carpenter's trade"
+    plausibility:
+      gentleman: rare
+      artisan: common
+      labourer: uncommon
+      soldier: uncommon
+      woman-settler: implausible
+    enables: [build-shelter, repair-palisade, boat-repair]
+    social_reading: >-
+      One of four trades the colony genuinely cannot do without, and the first
+      voyage brought only a handful. A carpenter eats when gentlemen do not.
+    translation: >-
+      You can work green timber with hand tools, which is exactly what this
+      colony needs and cannot get. Your hands are worth more here than any
+      gentleman's sword, and everyone knows it except the gentlemen.
+    certainty: established
+    source_ids: [smith-generall-historie-1624, kelso-buried-truth-2006]
+
+  - tag: skill.metalworking
+    era_name: "the smith's trade"
+    plausibility:
+      gentleman: implausible
+      artisan: common
+      labourer: rare
+      soldier: uncommon
+      woman-settler: implausible
+    enables: [repair-tools, forge-trade-goods, repair-arms]
+    social_reading: >-
+      A blacksmith controls the colony's only means of repairing its own tools,
+      and iron is also the trade good the Powhatan most want. That combination
+      makes a smith quietly one of the most powerful men inside the palisade,
+      and a target of the Company's rules against private trade.
+    translation: >-
+      Iron is the most valuable thing the English brought and you are the only
+      person who can shape it. A hatchet from your forge buys more corn than a
+      gentleman's whole purse.
+    certainty: established
+    source_ids: [kelso-buried-truth-2006, virginia-company-records]
+
+  - tag: skill.farming
+    era_name: "husbandry"
+    plausibility:
+      gentleman: rare
+      artisan: uncommon
+      labourer: common
+      soldier: uncommon
+      woman-settler: common
+    enables: [plant-crops, judge-soil, tend-livestock]
+    social_reading: >-
+      The colony's central and unforgivable failure. Men who knew husbandry were
+      a minority of the first landing, and English wheat farming does not
+      transfer to Virginia soil. The people who could actually feed this country
+      were farming it already, three miles upriver.
+    translation: >-
+      You know how to grow food, in a colony that starved with fertile ground
+      on every side. But your knowledge is English — wheat, barley, ridge and
+      furrow — and it does not work here. What works is maize, beans and squash
+      grown together in hills, and you will have to be taught it by the people
+      the English came to subordinate.
+    certainty: established
+    source_ids: [smith-generall-historie-1624, rountree-powhatan-1989, stahle-drought-1998]
+
+  - tag: skill.languages
+    era_name: "the gift of tongues"
+    plausibility:
+      gentleman: uncommon
+      artisan: rare
+      labourer: rare
+      soldier: rare
+      woman-settler: rare
+    enables: [interpret, powhatan-diplomacy, overhear]
+    social_reading: >-
+      Interpreters were the hinge of every negotiation and both sides placed
+      boys in the other's households to make more of them. To interpret is to be
+      trusted by nobody and needed by everyone.
+    translation: >-
+      Facility with languages makes you an interpreter, and interpreters in this
+      colony are placed as hostages — English boys sent to live among the
+      Powhatan, Powhatan youths into English households. You will understand
+      more than anyone around you and be believed by neither side.
+    certainty: established
+    source_ids: [smith-true-relation-1608, rountree-three-lives-2005]
+
+  - tag: skill.writing
+    era_name: "a good hand, and letters"
+    plausibility:
+      gentleman: common
+      artisan: uncommon
+      labourer: rare
+      soldier: rare
+      woman-settler: uncommon
+    enables: [keep-record, write-home, clerk-to-council]
+    social_reading: >-
+      Roughly a third of English men and rather fewer women could sign their
+      names. In a colony three thousand miles from its investors, whoever writes
+      the letters home decides what London believes happened.
+    translation: >-
+      You can write, which in 1607 is a form of power. Nearly everything anyone
+      will ever know about this colony comes from four or five men who wrote
+      things down, each of them defending himself. Your account will be one of
+      those, with the same problem.
+    certainty: established
+    source_ids: [percy-observations-1608, smith-generall-historie-1624]
+
+  - tag: skill.engineering
+    era_name: "the art of fortification, or of surveying"
+    plausibility:
+      gentleman: uncommon
+      artisan: uncommon
+      labourer: implausible
+      soldier: uncommon
+      woman-settler: implausible
+    enables: [design-fortification, survey-land, sink-well]
+    social_reading: >-
+      Fortification is a gentleman's science learned in the Low Countries;
+      surveying becomes the essential trade after 1618, when land grants make
+      the drawing of a boundary worth money.
+    translation: >-
+      Your engineering becomes fortification and water. The fort's own well,
+      sunk in 1608, was fouled within two years and became a rubbish pit. If you
+      can site a clean well on this island you will do more for the colony's
+      survival than any of its captains managed.
+    certainty: established
+    source_ids: [kelso-truth-revealed-2017, virginia-company-records]
+
+  - tag: skill.sailing
+    era_name: "seamanship"
+    plausibility:
+      gentleman: uncommon
+      artisan: uncommon
+      labourer: uncommon
+      soldier: rare
+      woman-settler: implausible
+    enables: [handle-shallop, river-navigation, trading-voyage]
+    social_reading: >-
+      The river is the only road. Everything — corn, news, powder, people —
+      moves by shallop, and the men who can handle one go on the trading voyages
+      that keep the colony alive and get some of them killed.
+    translation: >-
+      You can handle a boat, which in a colony with no roads makes you mobile in
+      a way almost nobody is. Every journey in this story is by water.
+    certainty: established
+    source_ids: [archer-relatyon-1607, smith-true-relation-1608]
+
+  - tag: skill.soldiering
+    era_name: "the trade of arms"
+    plausibility:
+      gentleman: common
+      artisan: rare
+      labourer: rare
+      soldier: common
+      woman-settler: implausible
+    enables: [command-watch, handle-matchlock, lead-raid]
+    social_reading: >-
+      Veterans of the Low Countries and Ireland made up much of the colony's
+      real strength, and after 1611 the whole settlement is run as a garrison
+      under martial law.
+    translation: >-
+      Your soldiering is worth more here than anywhere, and it will be used for
+      things you may not have signed up for: burning towns and standing corn,
+      because that is the English strategy in this war.
+    certainty: established
+    source_ids: [percy-trewe-relacyon-1625, virginia-company-records]
+
+  - tag: skill.cooking
+    era_name: "the dressing of meat, and housewifery"
+    plausibility:
+      gentleman: implausible
+      artisan: rare
+      labourer: uncommon
+      soldier: uncommon
+      woman-settler: common
+    enables: [make-rations-last, preserve-food, brew]
+    social_reading: >-
+      Never described as a skill by any man who wrote about this colony, and
+      completely essential to it. Brewing especially: beer was the safe drink,
+      and its absence sent men to a brackish river that poisoned them.
+    translation: >-
+      You can make food out of very little and keep it from spoiling — which is
+      the difference between a ration and a famine. Nobody writing the histories
+      will think to mention that you did it.
+    certainty: reconstructed
+    source_ids: [mccartney-immigrants-2007, percy-observations-1608]
+
+  - tag: skill.programming
+    era_name: "no equivalent — but the habit of mind has one"
+    plausibility:
+      gentleman: implausible
+      artisan: implausible
+      labourer: implausible
+      soldier: implausible
+      woman-settler: implausible
+    enables: [systematic-thinking, keep-accounts]
+    social_reading: >-
+      There is no trade to put this in. What can transfer is the disposition:
+      breaking a problem into parts, keeping exact records, noticing that a
+      process is failing at one specific step.
+    translation: >-
+      Nothing you do for a living exists here. What survives the crossing is the
+      turn of mind: you count things, you notice when a system is failing and
+      where, and you are unreasonably persistent about a problem. In a colony
+      whose stores are being embezzled and whose deaths nobody is tallying
+      properly, that is not nothing — but you will have to express it as
+      book-keeping, and be thought a strange and tiresome sort of person.
+    certainty: reconstructed
+    note: >-
+      Deliberately an example of how the pack handles a wholly modern skill:
+      no false equivalence, but a real translation of the underlying disposition.
+    source_ids: [kupperman-jamestown-project-2007, virginia-company-records]
+
+  # --- Traits ---------------------------------------------------------------
+  - tag: trait.stubborn
+    era_name: "obstinacy, or constancy, depending on who is describing you"
+    plausibility:
+      gentleman: common
+      artisan: common
+      labourer: common
+      soldier: common
+      woman-settler: common
+    enables: [resist-pressure, hold-position]
+    social_reading: >-
+      In a colony governed by a quarrelling council and later by martial law,
+      obstinacy is either the virtue that keeps you alive or the offence that
+      gets you whipped. The Lawes Divine name it directly.
+    translation: >-
+      Here your stubbornness is legible as either constancy or mutiny, and which
+      one depends entirely on who currently holds the presidency.
+    certainty: established
+    source_ids: [virginia-company-records, smith-generall-historie-1624]
+
+  - tag: trait.curious
+    era_name: "an inquiring disposition"
+    plausibility:
+      gentleman: common
+      artisan: uncommon
+      labourer: uncommon
+      soldier: uncommon
+      woman-settler: uncommon
+    enables: [learn-powhatan-ways, observe-closely]
+    social_reading: >-
+      The few English who genuinely tried to understand Tsenacommacah — Smith,
+      Strachey — produced nearly everything we now know about it. Curiosity was
+      also the thing that got men to walk outside the palisade and not come
+      back.
+    translation: >-
+      Wanting to know things pulls you toward the people your countrymen have
+      decided are beneath understanding. It is the most useful trait you can have
+      here and the most dangerous.
+    certainty: established
+    source_ids: [smith-map-of-virginia-1612, strachey-historie-1612]
+
+  - tag: trait.impulsive
+    era_name: "rashness, or a hot humour"
+    plausibility:
+      gentleman: common
+      artisan: common
+      labourer: common
+      soldier: common
+      woman-settler: uncommon
+    enables: [act-first]
+    social_reading: >-
+      Under Dale's laws after 1611 rashness can be a capital matter. Before that
+      it is how half the Council's quarrels start.
+    translation: >-
+      A hot humour, in a place where the punishments available for it include
+      the wheel and the rope.
+    certainty: established
+    source_ids: [virginia-company-records]
+
+  - tag: trait.devout
+    era_name: "godliness"
+    plausibility:
+      gentleman: common
+      artisan: common
+      labourer: common
+      soldier: common
+      woman-settler: common
+    enables: [church-standing, minister-confidence]
+    social_reading: >-
+      Attendance at prayer twice daily is compulsory and enforced by whipping.
+      Everyone in this colony is nominally devout; genuine piety is still
+      remarked upon, and it is one of the few forms of standing available to
+      someone without rank.
+    translation: >-
+      Faith here is not private. It is a public, compulsory, twice-daily fact of
+      life, and the church is where the colony conducts its politics — the first
+      Assembly sits in the choir.
+    certainty: established
+    source_ids: [virginia-company-records, assembly-proceedings-1619]
+
+  # --- Interests ------------------------------------------------------------
+  - tag: interest.astronomy
+    era_name: "the study of the heavens, and navigation"
+    plausibility:
+      gentleman: uncommon
+      artisan: rare
+      labourer: implausible
+      soldier: rare
+      woman-settler: rare
+    enables: [navigate, predict-season, reckon-latitude]
+    social_reading: >-
+      Practical navigation is a respected craft; astrology is not yet clearly
+      separate from astronomy and both are taken seriously. Predicting an
+      eclipse is a political act in a colony where the Powhatan and the English
+      are each assessing the other's power.
+    translation: >-
+      What you know of the sky is, here, the same subject as navigation and not
+      yet clearly distinct from astrology. Knowing when the sturgeon run and
+      when the frost comes matters more than any of it.
+    certainty: established
+    source_ids: [strachey-historie-1612, kupperman-jamestown-project-2007]
+
+  - tag: interest.music
+    era_name: "musick"
+    plausibility:
+      gentleman: common
+      artisan: uncommon
+      labourer: uncommon
+      soldier: uncommon
+      woman-settler: uncommon
+    enables: [entertain, ceremonial-role]
+    social_reading: >-
+      Drum and trumpet are instruments of command as much as of music. Both
+      English and Powhatan used song and dance formally in diplomacy, and the
+      English repeatedly misread Powhatan ceremony as either worship or threat.
+    translation: >-
+      Music is diplomacy here. Both peoples greet and negotiate with it, and
+      both consistently misread what the other's performance means.
+    certainty: established
+    source_ids: [archer-relatyon-1607, smith-map-of-virginia-1612]
+
+  - tag: interest.gardening
+    era_name: "the kitchen garden, and simples"
+    plausibility:
+      gentleman: rare
+      artisan: uncommon
+      labourer: uncommon
+      soldier: rare
+      woman-settler: common
+    enables: [grow-herbs, make-remedies, plant-crops]
+    social_reading: >-
+      Herbs for medicine — simples — were household knowledge, largely women's,
+      and the colony had none of the plants it knew. Learning which Virginia
+      plants did what meant asking the Powhatan.
+    translation: >-
+      Every plant you know is three thousand miles away. The ones growing here
+      have uses, and the people who know them are the people your countrymen
+      will not ask.
+    certainty: established
+    source_ids: [strachey-historie-1612, rountree-powhatan-1989]
+
+  - tag: interest.trade
+    era_name: "traffic, or merchandising"
+    plausibility:
+      gentleman: common
+      artisan: uncommon
+      labourer: rare
+      soldier: rare
+      woman-settler: rare
+    enables: [negotiate, assess-value, private-trade]
+    social_reading: >-
+      The whole colony is a commercial venture, and private trading with the
+      Powhatan — especially in iron tools — is forbidden precisely because it is
+      so profitable. Copper's value collapsed as the English flooded it in, and
+      Wahunsenacawh noticed before they did.
+    translation: >-
+      You understand exchange, in a place where two economies are colliding and
+      neither side understands the other's idea of value. The English think they
+      are buying corn cheaply. They are debasing a currency of prestige and
+      making an enemy of the man who controlled it.
+    certainty: established
+    source_ids: [rountree-powhatan-1989, smith-map-of-virginia-1612, virginia-company-records]

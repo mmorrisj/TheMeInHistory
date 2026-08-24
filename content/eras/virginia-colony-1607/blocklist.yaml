@@ -1,0 +1,160 @@
+# Anachronisms that must never appear in generated prose for this era.
+# `pattern` is a case-insensitive regular expression run against narration by
+# tests/anachronism.test.ts and by the runtime auditor.
+#
+# Severity `error` fails the eval suite. `warn` is reported and tolerated,
+# usually because the word has a legitimate period sense that a regex cannot
+# distinguish from the modern one.
+
+entries:
+  # --- Words that did not exist yet ----------------------------------------
+  - pattern: "\\bok(ay)?\\b"
+    why: "First attested 1839."
+    instead: "very well, aye, so be it"
+    severity: error
+
+  - pattern: "\\bhello\\b"
+    why: "Nineteenth-century greeting."
+    instead: "God save you, good morrow, how now"
+    severity: error
+
+  - pattern: "\\bteenager|teenaged?\\b"
+    why: "Coined in the 1940s; adolescence was not a recognised life stage."
+    instead: "a youth, a boy of fifteen, a maid of sixteen"
+    severity: error
+
+  - pattern: "\\bscientists?\\b"
+    why: "Coined 1834."
+    instead: "natural philosopher"
+    severity: error
+
+  - pattern: "\\b(bacteria|virus|germs?|infection|infected|antiseptic|vitamins?|calories|protein)\\b"
+    why: >-
+      Germ theory and nutrition science are centuries away. Characters explain
+      illness by corrupted air, ill humours, bad water and sin.
+    instead: "the flux, an ill humour, corrupted air, the sickening season"
+    severity: error
+
+  - pattern: "\\b(psycholog|trauma|traumatic|depress(ed|ion)|anxiety|stress(ed)?)\\w*"
+    why: "Modern therapeutic vocabulary and the interior model behind it."
+    instead: "cast down, melancholy, sore afraid, heavy of heart"
+    severity: error
+
+  - pattern: "\\bteam(work)?\\b|\\bmorale\\b|\\bleadership skills\\b"
+    why: "Modern managerial idiom."
+    instead: "the company, good order, discipline"
+    severity: error
+
+  # --- Things that did not exist here yet -----------------------------------
+  - pattern: "\\blog cabins?\\b"
+    why: >-
+      Horizontal-log construction reaches North America in 1638 with Swedish and
+      Finnish settlers on the Delaware. The commonest visual error about
+      Jamestown.
+    instead: "mud-and-stud house, a house of posts and clay, thatched cottage"
+    severity: error
+
+  - pattern: "\\brifle(s|d|man|men)?\\b"
+    why: "Rifled small arms are not in general use for two more centuries."
+    instead: "musket, caliver, piece, snaphaunce"
+    severity: error
+
+  - pattern: "\\b(revolver|pistol whip|percussion cap|cartridge belt|bayonet)\\b"
+    why: "All post-date the period."
+    instead: "matchlock, serpentine, rest, bandolier"
+    severity: error
+
+  - pattern: "\\b(coffee|tea time|teacup|rum ration)\\b"
+    why: >-
+      Coffee and tea do not reach England until the 1650s; rum's rise is later
+      still.
+    instead: "beer, small beer, aqua vitae, sassafras"
+    severity: error
+
+  - pattern: "\\b(potato|potatoes)\\b"
+    why: "Not a Virginia crop in this period."
+    instead: "maize, tuckahoe, beans, squash"
+    severity: error
+
+  - pattern: "\\b(horses?|horseback|cattle drive|buffalo|bison)\\b"
+    why: >-
+      There are no horses in Tsenacommacah and no bison on the coastal plain.
+      A handful of horses reached the colony and were eaten in the Starving Time.
+    instead: "on foot, by shallop, by canoe"
+    severity: warn
+
+  - pattern: "\\b(t[ei]epee|wigwam|war ?bonnet|totem pole|peace pipe)\\b"
+    why: >-
+      Plains and Great Lakes imagery projected onto a settled woodland farming
+      people on the Atlantic coast.
+    instead: "yehakin, matchcore, the temple at Uttamussack"
+    severity: error
+
+  - pattern: "\\bpotlatch|\\bsquaw\\b|\\bbraves?\\b(?= of the)"
+    why: "Wrong region, wrong period, or a slur."
+    instead: "name the people and the person"
+    severity: error
+
+  # --- Wrong colony, wrong country ------------------------------------------
+  - pattern: "\\b(pilgrims?|mayflower|plymouth rock|thanksgiving)\\b"
+    why: >-
+      Plymouth is 1620, six hundred miles north, a different company and a
+      different religion. The most common factual confusion readers arrive with.
+    instead: "nothing — this is not that story"
+    severity: error
+
+  - pattern: "\\b(the )?United States\\b|(?<!Native )\\bAmericans?\\b|\\bthe colonies\\b(?! of)"
+    why: >-
+      No such polity or identity exists in this period. These people are English
+      subjects in Virginia.
+    instead: "Virginia, this country, these parts, English"
+    severity: error
+
+  - pattern: "\\b(cowboy|frontier(sman)?|the Wild West|manifest destiny)\\b"
+    why: "Nineteenth-century American vocabulary."
+    instead: "the woods, up the river, beyond the palisade"
+    severity: error
+
+  - pattern: "\\bpuritans?\\b"
+    why: >-
+      Virginia's colonists are conforming Church of England. Puritanism is a
+      New England story.
+    instead: "the church, the minister, morning and evening prayer"
+    severity: warn
+
+  # --- Framing errors --------------------------------------------------------
+  - pattern: "\\bprincess\\b"
+    why: >-
+      Powhatan succession was matrilineal through brothers and sisters' sons.
+      Pocahontas could not have inherited. 'Princess' is an English category
+      imposed to make her legible to a London audience.
+    instead: "a daughter of the mamanatowick"
+    severity: error
+
+  - pattern: "\\bempty (land|country|continent|wilderness)\\b|\\buninhabited (land|country)\\b|\\bvirgin (land|forest|wilderness)\\b"
+    why: >-
+      Tsenacommacah held on the order of fifteen thousand people in settled
+      towns with cleared fields. The land was neither empty nor wild.
+    instead: "Paspahegh land, cleared fields, the towns along the river"
+    severity: error
+
+  - pattern: "\\bNative Americans?\\b"
+    why: >-
+      A twentieth-century term. Correct in the ledger and footnotes;
+      anachronistic in a 1607 mouth or in period narration.
+    instead: "the Powhatan, the Paspahegh, the Pamunkey — name the people"
+    severity: warn
+
+  - pattern: "\\bminutes?\\b(?! of the assembly| of the council)"
+    why: >-
+      Clock time to the minute is not how anyone in this colony experiences
+      duration. Bells, sandglasses, watches of the night, the sun.
+    instead: "within the hour, before noon, at the turning of the glass"
+    severity: warn
+
+  - pattern: "\\bdiscovered\\b(?= (?:the )?(?:river|bay|land|country))"
+    why: >-
+      The English did not discover a river the Powhatan had lived on for
+      centuries. They reached it, entered it, were shown it.
+    instead: "came to, entered, was shown, sailed up"
+    severity: warn

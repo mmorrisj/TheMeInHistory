@@ -1,0 +1,238 @@
+register: >-
+  Early modern English, roughly Shakespeare's generation, spoken by men from
+  Lincolnshire, London, Kent and the West Country who can hear the difference in
+  each other's speech and judge each other for it. Write prose that is plainer
+  and more concrete than modern literary English: shorter clauses, physical
+  nouns, few abstractions. The period reaches for scripture and law where a
+  modern speaker would reach for psychology — a man is not depressed, he is
+  cast down; he does not have a theory, he is of the opinion.
+
+  Thou, thee and thy are used downward and to intimates; you and ye upward and
+  to strangers. A gentleman is Master So-and-so, a commoner Goodman or Goodwife.
+  Do not write dialogue in thick pastiche — no "prithee, good sirrah" clotting
+  every line. One or two period markers a speech is enough; the rhythm carries
+  the rest.
+
+  Powhatan speech should never be rendered as broken English or as stoic
+  aphorism. Wahunsenacawh's court was a formal political setting with its own
+  rhetoric. When Powhatan characters speak among themselves, write them in
+  fluent, natural English — the convention that the audience is hearing their
+  language directly — and reserve halting speech for the genuine translation
+  difficulties of first contact, on both sides.
+
+vocabulary:
+  - term: shallop
+    meaning: A small open boat with oars and a sail, carried in pieces aboard ship and assembled on arrival.
+    usage: The colony's only means of moving on the river. Almost every journey in this pack is by shallop.
+    certainty: established
+    source_ids: [archer-relatyon-1607, smith-true-relation-1608]
+
+  - term: weroance
+    meaning: A Powhatan district chief. A female chief is a weroansqua.
+    usage: The English used the word constantly and spelled it a dozen ways.
+    certainty: established
+    source_ids: [smith-map-of-virginia-1612, strachey-historie-1612]
+
+  - term: mamanatowick
+    meaning: Paramount chief over the weroances. Wahunsenacawh's actual title.
+    certainty: established
+    source_ids: [strachey-historie-1612, rountree-powhatan-1989]
+
+  - term: Tsenacommacah
+    meaning: "The Powhatan name for their country: roughly, densely inhabited land."
+    usage: Use it. The English called it Virginia, but it had a name already.
+    certainty: established
+    source_ids: [strachey-historie-1612, rountree-powhatan-1989]
+
+  - term: yehakin
+    meaning: A Powhatan house of bent saplings covered with bark or mats.
+    certainty: established
+    source_ids: [strachey-historie-1612]
+
+  - term: quiyoughcosough
+    meaning: A Powhatan priest, and also the carved images kept in the temples.
+    certainty: established
+    source_ids: [smith-map-of-virginia-1612, strachey-historie-1612]
+
+  - term: huskanaw
+    meaning: The Powhatan initiation by which boys were separated, secluded and made men.
+    certainty: established
+    source_ids: [strachey-historie-1612, rountree-powhatan-1989]
+
+  - term: sofkee
+    meaning: Boiled maize pottage.
+    certainty: established
+    source_ids: [rountree-powhatan-1989]
+
+  - term: the bloody flux
+    meaning: Dysentery.
+    usage: What the colonists called it. They had no idea what caused it.
+    certainty: established
+    source_ids: [percy-observations-1608]
+
+  - term: the common store
+    meaning: The colony's pooled provisions, from which every man drew his ration.
+    usage: Stealing from it was a hanging matter under Dale's laws.
+    certainty: established
+    source_ids: [virginia-company-records, percy-observations-1608]
+
+  - term: adventurer
+    meaning: An investor who ventured capital, not a person seeking adventure.
+    usage: "A common source of modern misreading: adventurers stayed in London, planters crossed."
+    certainty: established
+    source_ids: [virginia-company-records]
+
+  - term: planter
+    meaning: One who plants a colony — a settler. Only later does it mean a large landholder.
+    certainty: established
+    source_ids: [virginia-company-records]
+
+  - term: salvages
+    meaning: The usual English spelling of "savages", from Latin silvaticus, of the woods.
+    usage: See contested_terms below before putting this in narration.
+    certainty: established
+    source_ids: [smith-map-of-virginia-1612, percy-observations-1608]
+
+  - term: corn
+    meaning: In English usage, grain of any kind; in Virginia it quickly comes to mean maize specifically.
+    certainty: established
+    source_ids: [smith-true-relation-1608]
+
+  - term: sennight
+    meaning: A week.
+    certainty: established
+    source_ids: [strachey-historie-1612]
+
+  - term: presently
+    meaning: Immediately, at once — not "in a little while".
+    certainty: established
+    source_ids: [smith-true-relation-1608]
+
+forms_of_address:
+  - speaker: labourer
+    addressee: gentleman
+    form: "Master Wingfield, or Your Worship to a knight or lord. Never a first name."
+  - speaker: gentleman
+    addressee: labourer
+    form: "By surname alone, or Goodman Laydon. Sirrah to rebuke or to put a man in his place."
+  - speaker: anyone
+    addressee: married commoner woman
+    form: "Goodwife, contracted to Goody. Mistress is for a gentlewoman only."
+  - speaker: soldier
+    addressee: officer
+    form: "Captain, or Master. The colony's officers are addressed by rank constantly."
+  - speaker: colonist
+    addressee: Powhatan weroance
+    form: >-
+      The English used "king" and "emperor" for Powhatan rulers, partly from
+      genuine confusion about the political structure and partly because
+      negotiating with a king dignified the negotiator.
+  - speaker: minister
+    addressee: congregation
+    form: "Brethren; and the whole colony attends twice daily, by law."
+
+avoid:
+  - modern: "okay / OK"
+    instead: "very well, so be it, aye"
+    why: "First attested in 1839, in Boston. Over two centuries late."
+  - modern: "hello"
+    instead: "God save you, good morrow, how now, give you good den"
+    why: "A nineteenth-century greeting; 'hallo' was a shout to hail someone at distance, not a greeting."
+  - modern: '"sure" as agreement'
+    instead: "aye, marry, that I will"
+    why: "The bare assenting 'sure' is modern American."
+  - modern: "guys"
+    instead: "men, fellows, lads"
+    why: "From Guy Fawkes, and not in this sense until the nineteenth century."
+  - modern: "teenager / teenage"
+    instead: "a youth, a boy of fourteen, a maid of sixteen"
+    why: "Coined in the 1940s. Adolescence as a life stage did not exist as a category."
+  - modern: "I feel like..."
+    instead: "I think, I hold, it seems to me, I am of the mind that"
+    why: "Modern therapeutic idiom. The period reaches for judgement, not feeling."
+  - modern: "scientist"
+    instead: "natural philosopher"
+    why: "Coined 1834."
+  - modern: "germs, infection, bacteria"
+    instead: "ill vapours, corrupted air, an ill humour, the flux"
+    why: >-
+      Germ theory is two and a half centuries away. Characters explain disease
+      by bad air, bad water, sin, and imbalanced humours. Let them be wrong; the
+      ledger can explain what was actually killing them.
+  - modern: '"minutes" as precise clock time'
+    instead: "within the hour, before noon, at the turning of the glass, by the second watch"
+    why: >-
+      Time was kept by bells, sundials and half-hour sandglasses aboard ship.
+      Nobody says "in about twenty minutes."
+  - modern: "log cabin"
+    instead: "mud-and-stud house, a house of posts and clay, a thatched cottage"
+    why: >-
+      The horizontal-log cabin arrives in North America with Swedish and Finnish
+      settlers on the Delaware in 1638, three decades later. This is the single
+      most common visual error about Jamestown.
+  - modern: "rifle"
+    instead: "musket, caliver, piece, snaphaunce"
+    why: "Rifled barrels are not in general military use for another two centuries."
+  - modern: "Pilgrims, Mayflower, Plymouth Rock, Thanksgiving"
+    instead: "nothing — they are not part of this story"
+    why: >-
+      Plymouth is 1620, six hundred miles north, a different company and a
+      different religion. Conflating the two is the most common factual error
+      readers arrive with.
+  - modern: "America / American / the United States"
+    instead: "Virginia, these parts, this country, the Indies"
+    why: "No such polity or identity exists. 'America' as a landmass name is used, but nobody is American."
+  - modern: "Native American"
+    instead: >-
+      In narration, name the specific people: Paspahegh, Pamunkey, Chickahominy,
+      or the Powhatan generally. In period dialogue, the English say Indians,
+      naturals, or salvages.
+    why: >-
+      A twentieth-century term. Correct and respectful in the ledger and
+      footnotes; anachronistic in a 1607 mouth.
+  - modern: "tomahawk, teepee, war bonnet, buffalo, horses"
+    instead: "tomahack (the Powhatan word, but a stone or wooden club), yehakin, deerskin mantle, deer"
+    why: >-
+      Plains imagery projected backwards onto a woodland farming people on the
+      Atlantic coast. There are no horses in Tsenacommacah and no bison. The
+      Powhatan lived in settled towns and farmed.
+  - modern: "chief's daughter as princess"
+    instead: "a daughter of the mamanatowick"
+    why: >-
+      Powhatan succession was matrilineal and passed through brothers and
+      sisters' sons. Pocahontas would never have inherited anything. 'Princess'
+      is an English category imposed to make her legible to a London audience.
+  - modern: "potatoes, coffee, tea, rum"
+    instead: "maize, beer, aqua vitae, sassafras tea"
+    why: >-
+      Coffee and tea do not reach England until the 1650s; rum's rise is later
+      still; the white potato is not a Virginia crop in this period.
+
+contested_terms:
+  - period_term: "salvages / savages"
+    modern_term: "the Powhatan; Tsenacommacah's peoples; named tribes"
+    guidance: >-
+      The narrator's own voice never uses the period term. English characters
+      may use it in dialogue where the scene is about English attitudes, and the
+      prose should let it land as the judgement it is rather than passing over
+      it. Do not scatter it for period colour.
+  - period_term: "Indians"
+    modern_term: "Powhatan, Paspahegh, Pamunkey, Chickahominy — name the people"
+    guidance: >-
+      Acceptable in English dialogue, where it is simply what they said.
+      In narration, prefer the specific name of the specific people, which is
+      both more accurate and better writing.
+  - period_term: "negroes"
+    modern_term: "Africans; people from Ndongo; specific names where recorded"
+    guidance: >-
+      Rolfe's phrase "20. and odd Negroes" is quoted directly in the timeline
+      because it is the historical document, and quoting it is how a reader
+      confronts how those people entered the record. Outside direct quotation of
+      a source, narration says Africans, or names them.
+  - period_term: '"king / emperor" for Powhatan rulers'
+    modern_term: "weroance, mamanatowick, paramount chief"
+    guidance: >-
+      English characters say king. Narration should use the Powhatan terms,
+      because the English words import a European political structure that did
+      not apply and that the English used partly to flatter themselves about
+      whom they were negotiating with.
