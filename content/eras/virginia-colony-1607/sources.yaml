@@ -168,13 +168,29 @@ sources:
   - id: stahle-drought-1998
     kind: scientific
     title: "The Lost Colony and Jamestown Droughts"
-    author: David W. Stahle et al., Science vol. 280
+    author: >-
+      D. W. Stahle, M. K. Cleaveland, D. B. Blanton, M. D. Therrell, D. A. Gay,
+      Science 280 (5363), 564-567
     year: "1998"
+    url: "https://doi.org/10.1126/science.280.5363.564"
     reliability: >-
       Bald cypress tree-ring reconstruction showing that 1606-1612 was the driest
       seven-year period in the region in 770 years. Independent physical evidence
       that reframes the colony's famine and the strain on Powhatan food surpluses
       as a shared environmental crisis, not simply English incompetence.
+
+  - id: ev-chauco
+    kind: secondary
+    title: "Chauco (fl. 1622-1623)"
+    author: Encyclopedia Virginia (Virginia Humanities)
+    year: "2021"
+    reliability: >-
+      Traces how an unnamed warner in the 1622 Company account became "Chanco"
+      in later retellings: the name appears in a 1623 council letter as
+      "Chauco", William Stith misread it in 1740, and the identification with
+      the man who warned Richard Pace is disputed. Used here to keep the pack
+      from asserting a name the record does not carry.
+    url: "https://encyclopediavirginia.org/Chauco_fl_1622-1623"
 
   # --- Secondary ------------------------------------------------------------
   - id: rountree-powhatan-1989

@@ -10,6 +10,37 @@ with an LLM is fine and fast. Shipping what it drafted is how you get a colony
 with log cabins and potatoes. Every entry needs a source you have actually
 looked at, and `status: reviewed` is a claim that someone did.
 
+## Two kinds of review
+
+`status: reviewed` gates playability. It says nothing about *how* the pack came
+to be trusted — that lives in the `review` record, and its `level` is the field
+that matters:
+
+| Level | What it means | What it does not mean |
+|---|---|---|
+| `automated` | A machine validated internal integrity and spot-checked citations against public sources. Real verification. | That the framing, emphasis, proportion, or omissions are sound. |
+| `expert` | A named person with training in the period read the pack end to end. | That every sentence is beyond dispute. |
+
+The distinction exists because the two failure modes are different. Automated
+checking catches a wrong date, a dangling source id, a name the record does not
+support. It cannot catch a pack that gets every fact right and still teaches
+badly — one that centres the colonists and treats the people already living
+there as scenery, or that reports an atrocity in the passive voice. Only a
+reader with judgement catches that, which is why `expert` cannot be inferred
+from a clean lint.
+
+Record spot checks individually. "I checked the pack" is not falsifiable;
+"I checked the 1622 death toll against the Virginia Company list and it said
+347" is, and a sceptical reader can re-run the row. Any check whose result is
+not `confirmed` must carry a `detail` explaining what happened — the linter
+enforces this, and a `corrected` row is the most useful thing in the file
+because it records a mistake the pack used to make.
+
+Write `limitations` as if to someone deciding whether to put the pack in front
+of learners. Understating what review has not happened is the one failure that
+compounds, because everything downstream — the ledger, the footnotes, the
+narrator's confidence — inherits the pack's authority.
+
 ## Files
 
 Each pack is a directory under `content/eras/<pack-id>/` with eleven files.

@@ -753,11 +753,11 @@ events:
       had done daily for eight years of peace, sat to breakfast, then took up
       whatever tools were to hand. About 347 English die in a morning, roughly a
       quarter of the colony. Jamestown itself is warned in the night by a
-      Powhatan youth named Chanco living in an English household, and holds. It
+      Powhatan living in an English household, and holds. It
       is the answer to eight years of plantations spreading up the river, and
       the English use it as licence for a war of extermination.
     region: james-river
-    people: [opechancanough, john-rolfe, chanco]
+    people: [opechancanough, john-rolfe]
     places: [james-fort, henrico, martins-hundred]
     fixed: true
     significance: pivotal
@@ -765,10 +765,14 @@ events:
     certainty: established
     note: >-
       The casualty figure of 347 comes from a Company list of the dead and is
-      about as firm as any number in this pack. Chanco's warning is attested but
-      the details accreted over time; treat the warning as established and the
-      dialogue around it as reconstructed.
-    source_ids: [virginia-company-records, smith-generall-historie-1624, rountree-powhatan-1989]
+      about as firm as any number in this pack. The warning to Jamestown is
+      attested; the name is not. The 1622 Company account names no one, the name
+      enters a 1623 council letter as "Chauco", William Stith misread it as
+      "Chanco" in 1740, and Rountree holds that Chauco and the man who warned
+      Richard Pace may be two different people. Several Powhatan appear to have
+      warned colonists. Narrate the warning, do not assert the name, and do not
+      let one man's choice stand in for a people's.
+    source_ids: [virginia-company-records, smith-generall-historie-1624, rountree-powhatan-1989, ev-chauco]
 
   - id: charter-revoked
     date: "1624-05-24"

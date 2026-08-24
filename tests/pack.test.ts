@@ -95,4 +95,48 @@ describe("Era Pack integrity", () => {
       expect(playable, `no hook for ${pos.id}`).toBe(true);
     }
   });
+  it("backs a reviewed status with a review record", () => {
+    if (pack.meta.status !== "reviewed") return;
+    const review = pack.meta.review;
+    expect(review, "a reviewed pack must say who reviewed it").toBeDefined();
+    expect(review!.by.length).toBeGreaterThan(0);
+    expect(review!.scope.length).toBeGreaterThan(0);
+    expect(review!.limitations.length).toBeGreaterThan(0);
+  });
+
+  it("explains every spot check that was not a plain confirmation", () => {
+    for (const c of pack.meta.review?.spot_checks ?? []) {
+      if (c.result !== "confirmed") {
+        expect(c.detail, `${c.claim} lacks detail`).toBeTruthy();
+      }
+    }
+  });
+
+  it("does not claim expert review it has not had", () => {
+    // Guards against someone flipping the level to buy trust the pack has not
+    // earned. Raising this to "expert" should mean editing the record to name
+    // the person who read it, which is deliberately harder than a one-word swap.
+    const review = pack.meta.review;
+    if (review?.level === "expert") {
+      expect(
+        review.by.toLowerCase(),
+        "expert review must name a person, not a tool",
+      ).not.toMatch(/claude|gpt|llm|automated|model/);
+    }
+  });
+
+  it("never asserts the 1622 warner's name as established fact", () => {
+    // The 1622 Company account names no one; "Chanco" is a later, disputed
+    // attachment. The timeline once asserted it, contradicting people.yaml.
+    const e = pack.timeline.find((x) => x.id === "powhatan-uprising-1622");
+    expect(e).toBeDefined();
+    expect(e!.summary).not.toMatch(/Chanco/i);
+    expect(e!.note ?? "").toMatch(/Chauco/);
+    expect(e!.people).not.toContain("chanco");
+  });
+
+  it("keeps the person entry for a disputed identification contested", () => {
+    const chanco = pack.people.find((p) => p.id === "chanco");
+    expect(chanco?.certainty).toBe("contested");
+  });
 });
