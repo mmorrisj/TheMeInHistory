@@ -1,0 +1,132 @@
+# Story openings. Each is a tension the narrative can run on rather than a plot
+# to execute, and each names what the player should come away understanding.
+
+hooks:
+  - id: first-summer
+    title: The Sickening Season
+    premise: >-
+      It is July 1607. Newport sailed for England a fortnight ago with both
+      large ships and most of the remaining provisions, and men have begun dying
+      at two and three a day. The ration is a pint of barley boiled in water.
+      The river beside the fort is the only water there is, and it turns salt on
+      the tide. The Council has stopped agreeing about anything. Somebody has to
+      work out what is killing everyone, and nobody in this fort has the concepts
+      to do it.
+    opens:
+      date: "1607-07-15"
+      place_id: james-fort
+    social_positions: [gentleman, artisan, labourer, soldier]
+    leads_to: [summer-sickness-1607, gosnold-dies, wingfield-deposed, autumn-trade-1607]
+    teaches:
+      - "Why the site was chosen, and why every reason for choosing it was also a reason it killed people."
+      - "That the drought of 1606-12 was the worst in seven centuries and strained the Powhatan as well."
+      - "How a joint-stock colony's incentives produced men who would not plant food."
+      - "What disease meant to people with no theory of it."
+    tags: [survival, disease, politics]
+
+  - id: corn-voyage
+    title: The Corn Voyage
+    premise: >-
+      Autumn 1607. The colony will not live to spring on what is in the
+      storehouse, and the only surplus within reach belongs to Powhatan towns
+      along the river — in a drought year, when it is not easily spared. You are
+      going upriver in a shallop with trade goods and orders that leave a great
+      deal to your discretion. What you bring back, and how you got it, will
+      determine whether these people are trading partners or enemies.
+    opens:
+      date: "1607-10-10"
+      place_id: james-fort
+    social_positions: [gentleman, soldier, artisan, labourer]
+    leads_to: [autumn-trade-1607, smith-captured, smith-president]
+    teaches:
+      - "That the English survived their first year on Powhatan agriculture."
+      - "How copper and iron functioned in two economies that valued them completely differently."
+      - "That Wahunsenacawh was conducting a foreign policy, not reacting to one."
+      - "How trade under threat becomes extortion, and how quickly."
+    tags: [trade, contact, diplomacy]
+
+  - id: the-glasshouse
+    title: The Foreigners at the Glasshouse
+    premise: >-
+      Autumn 1608. The Company wants a commodity — anything that can be sold in
+      London — and has sent Polish and German craftsmen to make glass, pitch and
+      tar a mile from the fort. They speak little English, stand outside the
+      chain of command, and are the only people here doing what the colony was
+      chartered to do. The two Englishwomen in Virginia arrived on the same ship.
+      Winter is coming and the president is Smith, who does not care what your
+      rank is.
+    opens:
+      date: "1608-10-20"
+      place_id: glasshouse
+    social_positions: [artisan, labourer, woman-settler, gentleman]
+    leads_to: [second-supply, smith-president, first-english-marriage]
+    teaches:
+      - "That the colony's purpose was profit, and it had no idea how to turn one."
+      - "What it meant to be foreign-born inside an English settlement."
+      - "The conditions of the first two Englishwomen in Virginia, and how thin the record of them is."
+      - "Why 'he that will not work shall not eat' was a radical proposition to gentlemen."
+    tags: [industry, labour, women, society]
+
+  - id: the-winter
+    title: The Winter
+    premise: >-
+      November 1609. Smith is gone, burned by his own powder and shipped home.
+      Five hundred people arrived in the summer and the harvest failed. The
+      Powhatan have stopped trading and are killing anyone who leaves the
+      palisade. The gates are shut. There are six months until any ship can
+      come, and everyone in this fort knows the arithmetic of what is in the
+      storehouse.
+    opens:
+      date: "1609-11-15"
+      place_id: james-fort
+    social_positions: [gentleman, artisan, labourer, soldier, woman-settler]
+    leads_to: [starving-time, gates-arrives-from-bermuda, colony-abandoned, de-la-warr-turns-them-back]
+    teaches:
+      - "What a siege does to a community over six months."
+      - "That the cannibalism is not legend — a girl's remains bear the cut marks."
+      - "That the colony was abandoned, and only chance reversed it."
+      - "How famine is produced by politics and weather together, not by one alone."
+    tags: [famine, siege, mortality]
+
+  - id: the-leaf
+    title: The Leaf
+    premise: >-
+      1617. The war is over, ended by a marriage. John Rolfe's Spanish tobacco
+      sells in London for more than anyone expected, and the plantations are
+      spreading up both banks of the river onto ground that was cleared and
+      farmed by someone else. You have land now, or the promise of it, and every
+      acre you plant needs hands you do not have. There is peace, and everyone
+      is behaving as though it will last.
+    opens:
+      date: "1617-04-01"
+      place_id: varina
+    social_positions: [gentleman, artisan, labourer, woman-settler]
+    leads_to: [rolfe-plants-tobacco, great-charter-headright, first-assembly, first-africans-arrive, powhatan-uprising-1622]
+    teaches:
+      - "That a single cash crop reorganised the colony's land, labour and politics within five years."
+      - "How the headright system turned transported people into acreage."
+      - "That the peace was a pause during which the thing the war had been about continued."
+      - "Why 1619 produced a representative assembly and the first shipment of Africans in the same summer."
+    tags: [tobacco, land, labour, peace]
+
+  - id: the-summer-of-1619
+    title: The Summer of 1619
+    premise: >-
+      July 1619. Twenty-two burgesses meet in the church at Jamestown — the
+      first representative assembly in English America — and sit for five days
+      in August heat debating tobacco prices and the instruction of Powhatan
+      children. A few weeks later an English privateer puts in at Point Comfort
+      with some twenty Africans taken off a Portuguese slaver, and sells them to
+      the governor for provisions. Both things happen in the same summer, in the
+      same small colony, to some of the same people.
+    opens:
+      date: "1619-07-28"
+      place_id: jamestown-church
+    social_positions: [gentleman, artisan, labourer]
+    leads_to: [first-assembly, first-africans-arrive, maids-for-wives]
+    teaches:
+      - "What the first representative assembly in English America actually did and did not do."
+      - "Who the people landed at Point Comfort were, and where in Africa they were taken from."
+      - "That their legal status was genuinely unsettled, and that unsettled never meant free."
+      - "That self-government and slavery entered this colony in the same season, and the histories that tell only one of those are choosing."
+    tags: [government, slavery, representation]

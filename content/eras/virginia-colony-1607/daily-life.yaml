@@ -1,0 +1,140 @@
+routines:
+  - id: gentleman-1607-summer
+    social_position: gentleman
+    season: "Summer 1607"
+    day:
+      - when: "Daybreak"
+        what: "The drum. Prayers in the unfinished church, morning and evening, by the Council's order."
+      - when: "Morning"
+        what: >-
+          Attendance on the Council, or nothing. The gentlemen have no assigned
+          labour and by Smith's account roughly a third of the company will not
+          take up a tool. Some walk the palisade; some search the creeks for a
+          glitter in the sand.
+      - when: "Noon"
+        what: "The ration: a pint of barley or wheat from the store, boiled in a kettle, shared."
+      - when: "Afternoon"
+        what: >-
+          Heat that stops work altogether. Talk turns on the Council's quarrels,
+          on who is hoarding, on when Newport will return, and on gold.
+      - when: "Evening"
+        what: "Prayers again. The watch set. Mosquitoes in the standing water under the trees."
+      - when: "Night"
+        what: >-
+          Men sicken in the dark and are found in the morning. Percy is writing
+          their names down.
+    concerns:
+      - "That the Council will depose whichever faction one has joined."
+      - "That one's own name will appear in the next letter home as a man who dug."
+      - "That the ore is not gold, and one has staked a reputation on it."
+    certainty: established
+    source_ids: [percy-observations-1608, smith-generall-historie-1624, kupperman-jamestown-project-2007]
+
+  - id: labourer-1608-winter
+    social_position: labourer
+    season: "Winter 1608, under Smith's presidency"
+    day:
+      - when: "Before light"
+        what: "Roused by the drum. Prayers."
+      - when: "Morning"
+        what: >-
+          Four hours' work by the president's rule, and the rule that he that
+          will not work shall not eat is enforced. Felling, splitting, carrying,
+          repairing the palisade after the fire.
+      - when: "Midday"
+        what: "The ration from the common store, then rest through the worst of the cold or heat."
+      - when: "Afternoon"
+        what: >-
+          More work, or the shallop downriver on a trading voyage — dangerous
+          duty, and the corn it brings back is the difference between the colony
+          living and not.
+      - when: "Evening"
+        what: "Prayers. The watch. Sleep on the ground or on a board in a mud-and-stud house."
+    concerns:
+      - "Hunger, first, last, and continually."
+      - "That your indenture has years left to run and no way out of it but death or the term."
+      - "That the men sent outside the palisade do not always come back."
+    certainty: established
+    source_ids: [smith-generall-historie-1624, kelso-buried-truth-2006, virginia-company-records]
+
+  - id: woman-1609
+    social_position: woman-settler
+    season: "1609, before the Starving Time"
+    day:
+      - when: "Before light"
+        what: "Fire laid and kindled — the household's fire is a woman's charge and it does not go out."
+      - when: "Morning"
+        what: >-
+          Water fetched. Maize pounded in a mortar, which takes a long time and
+          leaves the shoulders aching. Bread if there is meal for it.
+      - when: "Midday"
+        what: "The meal cooked and served. Washing, which without soap means beating linen in the river."
+      - when: "Afternoon"
+        what: >-
+          Mending, brewing where there is malt, poultry and garden if there is
+          either, nursing the sick — of whom there are always many.
+      - when: "Evening"
+        what: "Prayers. The fire banked. The work is not finished, it is only stopped."
+    concerns:
+      - "Being one of two women among two hundred men, and what that means in practice."
+      - "That a husband's death leaves you with no standing at all until you take another."
+      - "Children, in a place where most of them die."
+    certainty: reconstructed
+    note: >-
+      Almost entirely reconstructed. No account by an Englishwoman in early
+      Virginia survives, and the men who wrote everything down did not consider
+      this work worth describing. Presenting it as reconstruction rather than
+      record is itself part of what this pack should teach.
+    source_ids: [mccartney-immigrants-2007, kelso-buried-truth-2006, horn-land-as-god-made-it-2005]
+
+  - id: soldier-1610-war
+    social_position: soldier
+    season: "1610-1613, the First Anglo-Powhatan War"
+    day:
+      - when: "Dawn"
+        what: "The watch relieved. Match kept lit through the night, which everyone can smell and see."
+      - when: "Morning"
+        what: >-
+          Drill, or the palisade, or the boats. Under martial law the penalties
+          for slackness are read aloud so nobody can plead ignorance of them.
+      - when: "On campaign"
+        what: >-
+          Rowing to a town at night, firing the houses at first light, cutting
+          down the standing corn. This is the strategy: not battle, but making
+          the country impossible to live in.
+      - when: "Evening"
+        what: "Prayers, compulsory. The roll. Punishment parade if there is one."
+    concerns:
+      - "Powder that will not stay dry, and match that goes out."
+      - "That the men you burned out last month know exactly where you sleep."
+      - "That what you are ordered to do would be murder at home."
+    certainty: established
+    source_ids: [percy-trewe-relacyon-1625, virginia-company-records, rountree-powhatan-1989]
+
+  - id: artisan-1620-tobacco
+    social_position: artisan
+    season: "1620, the tobacco years"
+    day:
+      - when: "Dawn"
+        what: "Work begins early because tobacco does not wait and the season is short."
+      - when: "Morning"
+        what: >-
+          Your trade if anyone will pay for it, and tobacco if they will not.
+          By now every hand in the colony is in the leaf, including in the
+          streets of Jamestown itself, which the Assembly complains about.
+      - when: "Midday"
+        what: "Maize, salt fish, and beer if the ship has come."
+      - when: "Afternoon"
+        what: >-
+          Topping, worming, cutting, hanging the leaf to cure in an open shed.
+          Worming is picking hornworms off by hand, all day.
+      - when: "Evening"
+        what: >-
+          Accounts, if you keep any. Everything in the colony is now priced in
+          pounds of leaf, including a wife's passage.
+    concerns:
+      - "That the price of tobacco in London falls, as it is already beginning to."
+      - "That your headright land is upriver among plantations strung out with no defence between them."
+      - "That servants cost less than free labour and your trade is worth less every year."
+    certainty: established
+    source_ids: [assembly-proceedings-1619, virginia-company-records, horn-1619-2018]

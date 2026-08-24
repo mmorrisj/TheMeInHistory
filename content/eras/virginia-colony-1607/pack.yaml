@@ -1,0 +1,104 @@
+id: virginia-colony-1607
+title: "Virginia Colony: Jamestown, 1607-1624"
+blurb: >-
+  Three ships anchor in a brackish river on the edge of a country that already
+  has a name, a paramount chief, and thirty years of memory of Europeans. You
+  arrive in the middle of the worst drought in seven centuries, into a colony
+  run by a council that cannot stop quarrelling, in a land the Powhatan call
+  Tsenacommacah. Most of the people who land with you will be dead within a
+  year.
+status: reviewed
+reviewed_by: "Pending review by a period historian. See docs/ERA_AUTHORING.md."
+
+date_range:
+  start: "1607-04-26"
+  end: "1624-05-24"
+
+regions:
+  - james-river
+  - york-river
+  - chesapeake-bay
+  - atlantic-crossing
+  - london
+
+social_positions:
+  - id: gentleman
+    label: Gentleman Adventurer
+    description: >-
+      A younger son or minor gentry with a share in the Virginia Company. You
+      came for profit and reputation, not labour, and roughly a third of the
+      first landing party is like you. You carry a sword and expect to be
+      addressed as Master.
+    constraints:
+      - "Manual labour is beneath your station, and saying so out loud in 1607 is normal, not villainous."
+      - "You answer to the Council, and the Council answers to London seven weeks away by sea."
+      - "Your survival depends on people you consider your inferiors."
+
+  - id: artisan
+    label: Craftsman or Artisan
+    description: >-
+      A carpenter, blacksmith, bricklayer, cooper, or one of the Polish and
+      German glassmakers and pitch-burners brought over in 1608. Your skills are
+      the colony's actual capital, and everyone knows it but the gentlemen.
+    constraints:
+      - "You work for the Company, not for wages. There is no market to sell your labour into."
+      - "You may be the only person in the colony who can do what you do, which is both leverage and a trap."
+      - "Foreign-born artisans are outside the English chain of command and often outside its protection."
+
+  - id: labourer
+    label: Labourer or Servant
+    description: >-
+      Bound to the Company by indenture, or simply too poor to have been asked.
+      You dig, carry, cut, and are the first to be sent outside the palisade.
+    constraints:
+      - "Your indenture is a legal instrument, and running to the Powhatan is punished as desertion."
+      - "You eat what the common store issues, when it issues it."
+      - "Under Dale's martial law after 1611 the penalties available for your disobedience include death."
+
+  - id: soldier
+    label: Soldier
+    description: >-
+      A veteran of the Low Countries or the Irish wars, hired for defence. Your
+      trade is the one skill the colony never stops needing.
+    constraints:
+      - "You are expected to fire on people whose land this is, and to call it defence."
+      - "Your matchlock takes the better part of a minute to load and will not fire in the wet."
+      - "You take orders from gentlemen who have never held a pike."
+
+  - id: woman-settler
+    label: Englishwoman in the Colony
+    description: >-
+      Almost nobody, at first. Mistress Forrest and her maid Anne Burras arrive
+      in autumn 1608 as the only two women among two hundred men; large-scale
+      transport of women does not begin until 1620.
+    constraints:
+      - "You have no legal standing independent of a husband or master."
+      - "Your scarcity makes you both valuable and unsafe, and the record of what that meant is thin because nobody thought to write it down."
+      - "The work assigned to you is unending and invisible in every account written by men."
+
+content_posture:
+  unavoidable:
+    - "The dispossession of the Powhatan peoples from land they had farmed for centuries."
+    - "Massacre and reprisal in both directions, including the deliberate English killing of non-combatants."
+    - "Starvation severe enough to produce documented cannibalism."
+    - "The arrival in 1619 of the first documented Africans in English North America, taken by force from Ndongo."
+    - "Indentured servitude enforced by corporal and capital punishment."
+  depicts:
+    - "Hunger, illness, and death from disease, in plain terms."
+    - "The aftermath of violence, and its cost to the people who committed it."
+    - "Period contempt in the mouths of period characters, where the story is about that contempt."
+    - "Powhatan life on its own terms, not as backdrop to an English story."
+  reports:
+    - "Sexual violence: acknowledged as part of the historical record, never rendered as a scene."
+    - "The killing of children at Paspahegh in 1610: reported in its full horror, not staged."
+    - "Torture and execution under martial law."
+  refuses:
+    - "Any framing in which colonisation is adventure without cost to the colonised."
+    - "Depiction of enslaved or captive people as content with their condition."
+    - "Gore or suffering rendered for effect rather than for understanding."
+  fixed_outcomes:
+    - "The Powhatan lose their land. No player choice reverses this."
+    - "The Starving Time kills the great majority of the colony in the winter of 1609-10."
+    - "Africans are landed at Point Comfort in August 1619 and are not free to leave."
+    - "Opechancanough's coordinated attack falls on 22 March 1622."
+    - "The colony survives. It is not abandoned, though in June 1610 it very nearly is."

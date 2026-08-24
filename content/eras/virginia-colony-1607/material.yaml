@@ -1,0 +1,286 @@
+# What people wore, ate, carried, fought with and paid in.
+# `available_to` names social positions from pack.yaml, so the narrator cannot
+# hand a labourer a gentleman's sword.
+
+items:
+  # --- Clothing -------------------------------------------------------------
+  - id: doublet-and-hose
+    name: Doublet and hose
+    category: clothing
+    description: >-
+      Wool doublet buttoned to the throat over a linen shirt, with breeches and
+      knitted stockings. Utterly wrong for a Virginia summer, and worn anyway,
+      because a man's clothes were his rank and there was nothing else to wear.
+      By 1610 much of it is in rags and being patched with whatever comes to
+      hand, including Powhatan-made deerskin.
+    available_to: [gentleman, artisan, labourer, soldier]
+    tags: [clothing, daily-life]
+    certainty: established
+    source_ids: [kelso-buried-truth-2006, percy-observations-1608]
+
+  - id: matchcoat
+    name: Matchcore
+    category: clothing
+    description: >-
+      A Powhatan mantle of dressed deerskin, worn over one shoulder. The English
+      borrowed both the garment and the word, which appears in their accounts as
+      matchcore or matchcoat. Adopting it was practical and slightly shameful to
+      men who understood clothing as rank.
+    available_to: [gentleman, artisan, labourer, soldier, woman-settler]
+    tags: [clothing, powhatan, exchange]
+    certainty: established
+    source_ids: [strachey-historie-1612, smith-map-of-virginia-1612]
+
+  - id: coif-and-apron
+    name: Coif, kirtle and apron
+    category: clothing
+    description: >-
+      A woman's linen cap covering the hair, a wool kirtle, and an apron over
+      it. Respectable and hot. Laundering it in a colony without soap is one of
+      the invisible labours no account bothers to record.
+    available_to: [woman-settler]
+    tags: [clothing, women, daily-life]
+    certainty: reconstructed
+    note: >-
+      Reconstructed from English practice of the period and from artefacts at
+      the site rather than from any description of Virginia women's dress, of
+      which there is essentially none.
+    source_ids: [kelso-buried-truth-2006, mccartney-immigrants-2007]
+
+  # --- Food -----------------------------------------------------------------
+  - id: maize
+    name: Indian corn
+    category: food
+    description: >-
+      The staple, and the colony's lifeline. The English never grew enough of it
+      themselves in the early years and got it from Powhatan towns by trade, gift
+      and threat. Ground in a mortar and boiled into a pottage the English called
+      sofkee after the Algonquian word.
+    available_to: [gentleman, artisan, labourer, soldier, woman-settler]
+    tags: [food, powhatan, trade]
+    certainty: established
+    source_ids: [smith-true-relation-1608, rountree-powhatan-1989]
+
+  - id: sturgeon
+    name: Sturgeon
+    category: food
+    description: >-
+      Atlantic sturgeon ran the James in early summer, some of them eight feet
+      long, and for a few weeks a year the colonists ate nothing else until they
+      loathed it. Sturgeon bone is among the most common food refuse in the fort
+      excavations. Out of season, there is nothing.
+    available_to: [gentleman, artisan, labourer, soldier, woman-settler]
+    tags: [food, river, seasonal]
+    certainty: established
+    source_ids: [kelso-buried-truth-2006, smith-true-relation-1608]
+
+  - id: ships-biscuit
+    name: Ship's biscuit and meal
+    category: food
+    description: >-
+      Twice-baked hard bread and barley or wheat meal from the common store,
+      issued by the pint. Percy records the ration in the summer of 1607 as a
+      pint of barley or wheat a day per man, boiled in water, and much of it
+      already spoiled by weevils after months in a hold.
+    available_to: [gentleman, artisan, labourer, soldier, woman-settler]
+    tags: [food, ration, famine]
+    certainty: established
+    source_ids: [percy-observations-1608]
+
+  - id: oysters
+    name: Oysters
+    category: food
+    description: >-
+      Abundant in the shallows and a mainstay when nothing else could be had.
+      The colonists ate them in quantity and complained of them constantly.
+    available_to: [gentleman, artisan, labourer, soldier, woman-settler]
+    tags: [food, river]
+    certainty: established
+    source_ids: [percy-observations-1608, kelso-buried-truth-2006]
+
+  - id: tuckahoe
+    name: Tuckahoe
+    category: food
+    description: >-
+      Arrow arum root, gathered from marshes by Powhatan women, pounded and
+      dried into meal after long processing to remove the calcium oxalate that
+      makes it inedible raw. A hunger food, and evidence of exactly the kind of
+      local knowledge the English lacked and mostly declined to learn.
+    available_to: [gentleman, artisan, labourer, soldier, woman-settler]
+    tags: [food, powhatan, knowledge]
+    certainty: established
+    source_ids: [strachey-historie-1612, rountree-powhatan-1989]
+
+  # --- Weapons and tools ----------------------------------------------------
+  - id: matchlock-musket
+    name: Matchlock musket
+    category: weapon
+    description: >-
+      Fired by a length of smouldering cord clamped in a serpentine, needing a
+      forked rest to steady the barrel. Loud, slow to load, useless in rain, and
+      visible at night by its lit match. Its advantage over a bow is entirely
+      psychological and at close range the bow is better in every measurable way
+      — faster, quieter, accurate, and it works wet.
+    available_to: [gentleman, soldier, artisan]
+    tags: [weapon, military]
+    certainty: established
+    source_ids: [kelso-buried-truth-2006, smith-map-of-virginia-1612]
+
+  - id: corslet-and-morion
+    name: Corslet and morion
+    category: weapon
+    description: >-
+      Breast and back plate with a crested helmet, worn by men expecting
+      European war. Effective against arrows and close to unbearable in a
+      Virginia August; pieces of it were cut up and traded away or reworked into
+      tools.
+    available_to: [gentleman, soldier]
+    tags: [weapon, armour, military]
+    certainty: established
+    source_ids: [kelso-buried-truth-2006]
+
+  - id: powhatan-bow
+    name: Powhatan bow
+    category: weapon
+    description: >-
+      Witch hazel or locust, about five feet, with cane arrows fletched with
+      turkey feather and tipped with stone, bone or antler. Smith recorded an
+      arrow driven through a steel target at forty yards. A trained man could
+      loose a dozen aimed shots in the time it took an Englishman to reload once.
+    available_to: []
+    tags: [weapon, powhatan]
+    certainty: established
+    source_ids: [smith-map-of-virginia-1612, strachey-historie-1612]
+
+  - id: felling-axe
+    name: Felling axe and adze
+    category: tool
+    description: >-
+      Iron tools were among the most valued things the English had, both to them
+      and in trade. A hatchet would buy a great deal of corn, which is why the
+      Company forbade private trading in them and why men did it anyway.
+    available_to: [artisan, labourer, gentleman, soldier]
+    tags: [tool, trade, craft]
+    certainty: established
+    source_ids: [kelso-buried-truth-2006, smith-generall-historie-1624]
+
+  - id: copper-sheet
+    name: Copper
+    category: trade-good
+    description: >-
+      The single most effective English trade good. In Tsenacommacah copper was
+      high-status material controlled by the mamanatowick and distributed as a
+      mark of favour, so English copper flooding in was not simply commerce — it
+      devalued a currency of prestige and Wahunsenacawh understood that clearly.
+    available_to: [gentleman, soldier, artisan]
+    tags: [trade, powhatan, status]
+    certainty: established
+    source_ids: [smith-map-of-virginia-1612, rountree-powhatan-1989, kelso-buried-truth-2006]
+
+  - id: roanoke-shell-beads
+    name: Roanoke and peak
+    category: currency
+    description: >-
+      Shell beads: roanoke the rougher disc bead, peak the finer tubular sort
+      cut from whelk and quahog. Wealth and formal exchange among the Powhatan
+      ran on these, and the English learned to carry them.
+    available_to: [gentleman, soldier]
+    tags: [currency, powhatan, trade]
+    certainty: established
+    source_ids: [strachey-historie-1612, rountree-powhatan-1989]
+
+  - id: mud-and-stud-house
+    name: Mud-and-stud house
+    category: building
+    description: >-
+      Upright posts set in the ground with thin studs between them, plastered
+      over with clay and roofed with thatch or reed. An East Anglian building
+      technique carried straight across the Atlantic, and what the excavated
+      post-holes at the fort actually show — not the log cabin of later
+      imagination, which arrives in North America decades later with Swedish and
+      Finnish settlers on the Delaware.
+    available_to: [gentleman, artisan, labourer, soldier, woman-settler]
+    tags: [building, daily-life]
+    certainty: established
+    source_ids: [kelso-buried-truth-2006, kelso-truth-revealed-2017]
+
+  - id: yehakin
+    name: Yehakin
+    category: building
+    description: >-
+      Powhatan house: saplings bent into an arched frame and covered with bark
+      or woven reed mats, with a smoke hole above a central hearth. Warm, dry,
+      and adjustable — the mats could be rolled up in summer. Better suited to
+      the country in every respect than anything the English built.
+    available_to: []
+    tags: [building, powhatan]
+    certainty: established
+    source_ids: [strachey-historie-1612, smith-map-of-virginia-1612, rountree-powhatan-1989]
+
+  - id: tobacco-orinoco
+    name: Spanish tobacco (Nicotiana tabacum)
+    category: trade-good
+    description: >-
+      The sweet-scented Orinoco leaf Rolfe planted from 1612, in place of the
+      harsh native Nicotiana rustica the Powhatan grew for ritual use. By 1620
+      it is the colony's whole economy, grown in the streets of Jamestown itself,
+      and the Assembly is legislating its price.
+    available_to: [gentleman, artisan, labourer]
+    price: "3 shillings the pound in 1619, falling sharply through the 1620s"
+    tags: [tobacco, economy, agriculture]
+    certainty: established
+    source_ids: [hamor-true-discourse-1615, assembly-proceedings-1619, horn-land-as-god-made-it-2005]
+
+  - id: aqua-vitae
+    name: Aqua vitae and beer
+    category: medicine
+    description: >-
+      Distilled spirit and small beer. Beer was the ordinary drink for everyone
+      including children, and the colony's lack of it drove men to the river —
+      which, being tidal and brackish in the drought years, poisoned them with
+      salt. Aqua vitae served as medicine for almost everything.
+    available_to: [gentleman, artisan, labourer, soldier, woman-settler]
+    tags: [drink, medicine, health]
+    certainty: established
+    source_ids: [percy-observations-1608, stahle-drought-1998]
+
+economy:
+  - id: wage-english-labourer
+    label: Wage of a labourer in England, c. 1607
+    value: "6d to 10d a day, when work could be had"
+    certainty: established
+    source_ids: [kupperman-jamestown-project-2007]
+
+  - id: wage-english-craftsman
+    label: Wage of a skilled craftsman in England, c. 1607
+    value: "about 12d (one shilling) a day"
+    certainty: established
+    source_ids: [kupperman-jamestown-project-2007]
+
+  - id: colonist-pay
+    label: What a colonist was paid at Jamestown
+    value: >-
+      Nothing. Until 1614 colonists worked for the Company and drew from the
+      common store; a man's return was a share in the venture, not a wage. This
+      is the single most important economic fact about the early colony and the
+      reason so much labour went into looking for gold rather than planting.
+    certainty: established
+    source_ids: [virginia-company-records, kupperman-jamestown-project-2007]
+
+  - id: money-of-account
+    label: English money
+    value: "£1 = 20 shillings; 1 shilling = 12 pence. Written 3s 6d."
+    certainty: established
+    source_ids: [virginia-company-records]
+
+  - id: headright-value
+    label: A headright
+    value: "50 acres for each person whose passage you paid, from 1618"
+    certainty: established
+    source_ids: [virginia-company-records, horn-1619-2018]
+
+  - id: bride-price-tobacco
+    label: Repayment for a woman's passage, 1620-21
+    value: "120 pounds of best leaf tobacco, paid by the planter who married her"
+    certainty: established
+    source_ids: [virginia-company-records, horn-1619-2018]

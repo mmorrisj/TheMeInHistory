@@ -1,0 +1,131 @@
+# The shared tag vocabulary that character traits are normalised into.
+#
+# Era Packs map these tags to era-specific affordances. A tag with no mapping in
+# a given pack is not an error: it means the era has no equivalent, and the
+# player is told so honestly rather than being handed a false one.
+
+skills:
+  - id: skill.medicine
+    label: Medicine and healing
+    aliases: [doctor, nurse, first aid, emt, paramedic, healthcare, surgery, pharmacology]
+  - id: skill.chemistry
+    label: Chemistry
+    aliases: [chemist, biochemistry, lab work, pharmacy]
+  - id: skill.carpentry
+    label: Carpentry and woodwork
+    aliases: [woodworking, joinery, cabinetmaking, construction, framing]
+  - id: skill.metalworking
+    label: Metalwork
+    aliases: [blacksmith, welding, machining, forging, metallurgy, jewellery]
+  - id: skill.farming
+    label: Farming and growing
+    aliases: [agriculture, husbandry, homesteading, ranching, horticulture]
+  - id: skill.languages
+    label: Languages
+    aliases: [linguist, translator, interpreter, bilingual, polyglot]
+  - id: skill.writing
+    label: Writing and record-keeping
+    aliases: [author, journalist, editor, clerk, bookkeeping, accounting]
+  - id: skill.engineering
+    label: Engineering
+    aliases: [civil engineering, mechanical, surveying, architecture, drafting]
+  - id: skill.sailing
+    label: Boats and seafaring
+    aliases: [sailor, boating, navigation, fishing, mariner]
+  - id: skill.soldiering
+    label: Fighting and soldiering
+    aliases: [military, army, veteran, marksman, martial arts, combat]
+  - id: skill.cooking
+    label: Cooking and provisioning
+    aliases: [chef, baker, brewing, preserving, catering]
+  - id: skill.programming
+    label: Programming and systems
+    aliases: [software, coding, developer, it, data, computers, engineer]
+  - id: skill.teaching
+    label: Teaching
+    aliases: [teacher, professor, tutor, instructor, coach]
+  - id: skill.law
+    label: Law and argument
+    aliases: [lawyer, attorney, solicitor, advocate, paralegal, judge]
+  - id: skill.music
+    label: Music
+    aliases: [musician, singer, instrument, composer]
+  - id: skill.art
+    label: Drawing and making images
+    aliases: [artist, painter, illustrator, designer, photography, sculpture]
+  - id: skill.trade
+    label: Buying, selling and negotiating
+    aliases: [merchant, sales, business, commerce, negotiation, retail]
+  - id: skill.athletics
+    label: Physical endurance and strength
+    aliases: [athlete, running, climbing, swimming, fitness, sports]
+
+traits:
+  - id: trait.stubborn
+    label: Stubborn
+    aliases: [determined, obstinate, persistent, tenacious, headstrong]
+  - id: trait.curious
+    label: Curious
+    aliases: [inquisitive, questioning, inquiring, wondering]
+  - id: trait.impulsive
+    label: Impulsive
+    aliases: [rash, hasty, impetuous, reckless, spontaneous]
+  - id: trait.cautious
+    label: Cautious
+    aliases: [careful, prudent, wary, deliberate, risk-averse]
+  - id: trait.devout
+    label: Devout
+    aliases: [religious, faithful, pious, spiritual, believing]
+  - id: trait.sceptical
+    label: Sceptical
+    aliases: [skeptical, doubting, questioning authority, freethinking]
+  - id: trait.kind
+    label: Kind
+    aliases: [compassionate, generous, gentle, caring, warm]
+  - id: trait.proud
+    label: Proud
+    aliases: [haughty, dignified, status-conscious, vain]
+  - id: trait.charming
+    label: Persuasive
+    aliases: [charismatic, silver-tongued, likeable, sociable, diplomatic]
+  - id: trait.solitary
+    label: Solitary
+    aliases: [introverted, private, reserved, withdrawn, quiet]
+  - id: trait.brave
+    label: Brave
+    aliases: [courageous, bold, fearless, valiant]
+  - id: trait.anxious
+    label: Anxious
+    aliases: [nervous, fearful, worried, timid, apprehensive]
+
+interests:
+  - id: interest.astronomy
+    label: The night sky
+    aliases: [stars, space, astrology, planets, telescope]
+  - id: interest.music
+    label: Music
+    aliases: [singing, playing, listening, concerts, bands]
+  - id: interest.gardening
+    label: Plants and growing things
+    aliases: [garden, botany, herbs, flowers, allotment]
+  - id: interest.trade
+    label: Commerce and exchange
+    aliases: [markets, business, economics, bargaining, collecting]
+  - id: interest.history
+    label: The past
+    aliases: [archaeology, genealogy, antiquities, museums]
+  - id: interest.animals
+    label: Animals
+    aliases: [dogs, horses, birds, hunting, falconry, veterinary]
+  - id: interest.cooking
+    label: Food
+    aliases: [baking, eating, recipes, foraging]
+  - id: interest.games
+    label: Games and gambling
+    aliases: [cards, dice, chess, sport, wagering, puzzles]
+  - id: interest.travel
+    label: Going places
+    aliases: [exploring, wandering, hiking, seeing new countries]
+  - id: interest.storytelling
+    label: Stories
+    aliases: [reading, books, theatre, plays, poetry, films]

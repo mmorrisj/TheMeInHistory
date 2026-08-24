@@ -1,0 +1,789 @@
+# Dated events for Virginia, 1606-1624.
+# `fixed: true` marks documented outcomes the engine will not let a player
+# choice avert. The narrative bends around them; it does not rewrite them.
+#
+# Dates are Old Style (Julian) as the English recorded them, which is how every
+# primary source in this pack gives them.
+
+events:
+  - id: charter-granted
+    date: "1606-04-10"
+    title: The First Virginia Charter
+    summary: >-
+      James I grants the Virginia Company of London a charter to plant a colony
+      between 34 and 41 degrees north. The venture is a joint-stock company, not
+      a crown expedition: investors expect a return, and that expectation shapes
+      every decision made at Jamestown for the next eighteen years.
+    region: london
+    people: []
+    places: []
+    fixed: true
+    significance: major
+    tags: [politics, company, england]
+    certainty: established
+    source_ids: [virginia-company-records]
+
+  - id: fleet-departs
+    date: "1606-12-20"
+    title: Three Ships Leave London
+    summary: >-
+      Susan Constant, Godspeed and Discovery drop down the Thames under
+      Christopher Newport, carrying about 144 men and boys including crew.
+      Contrary winds hold them in the Downs within sight of England for roughly
+      six weeks, eating stores meant for the voyage.
+    region: atlantic-crossing
+    people: [christopher-newport, bartholomew-gosnold, john-smith, edward-maria-wingfield, george-percy]
+    places: []
+    fixed: true
+    significance: major
+    tags: [voyage, ships]
+    certainty: established
+    source_ids: [percy-observations-1608, smith-generall-historie-1624]
+
+  - id: smith-arrested-at-sea
+    date: "1607-02"
+    title: Smith Put in Irons
+    summary: >-
+      Somewhere in the West Indies, John Smith is arrested on a charge of
+      plotting mutiny and confined for the rest of the crossing. He is still
+      under arrest when the fleet reaches Virginia, and only released when the
+      sealed instructions are opened and name him to the Council.
+    region: atlantic-crossing
+    people: [john-smith, edward-maria-wingfield]
+    places: []
+    fixed: false
+    significance: minor
+    tags: [conflict, leadership]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, percy-observations-1608]
+
+  - id: first-landing-cape-henry
+    date: "1607-04-26"
+    title: Landfall at Cape Henry
+    summary: >-
+      The fleet enters the Chesapeake after four months at sea. A shore party
+      is attacked the same night by Chesapeake warriors and two Englishmen are
+      wounded. That evening the sealed box from the Company is opened, naming
+      the seven councillors. The colony's first act on land is a fight, and its
+      second is an argument about who is in charge.
+    region: chesapeake-bay
+    people: [christopher-newport, george-percy, john-smith, edward-maria-wingfield]
+    places: [cape-henry]
+    fixed: true
+    significance: pivotal
+    tags: [arrival, contact, violence]
+    certainty: established
+    source_ids: [percy-observations-1608, archer-relatyon-1607]
+
+  - id: jamestown-site-chosen
+    date: "1607-05-13"
+    title: The Site on the Island Is Chosen
+    summary: >-
+      After two weeks exploring the river the English pick a marshy peninsula
+      some fifty miles upstream. It is defensible against Spanish warships and
+      has deep water close inshore for mooring. It also has no reliable fresh
+      water, breeds mosquitoes, and belongs to the Paspahegh. They land and
+      begin work the following day.
+    region: james-river
+    people: [christopher-newport, edward-maria-wingfield]
+    places: [jamestown-island, james-river-mouth]
+    fixed: true
+    significance: pivotal
+    tags: [founding, settlement]
+    certainty: established
+    source_ids: [percy-observations-1608, archer-relatyon-1607, kelso-buried-truth-2006]
+
+  - id: wingfield-president
+    date: "1607-05-13"
+    title: Wingfield Elected President
+    summary: >-
+      Edward Maria Wingfield, the only charter grantee present, is chosen
+      president by the Council. He refuses to fortify the settlement properly,
+      reasoning that a palisade would provoke the Powhatan. Smith, still under
+      arrest, is refused his seat.
+    region: james-river
+    people: [edward-maria-wingfield, john-smith]
+    places: [james-fort]
+    fixed: true
+    significance: major
+    tags: [leadership, politics]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, percy-observations-1608, kupperman-jamestown-project-2007]
+
+  - id: archer-exploration-upriver
+    date: "1607-05-21"
+    title: Newport's Party Goes Up the James
+    summary: >-
+      Newport takes a shallop upriver as far as the falls, meeting the
+      Arrohateck and Powhatan proper, and is received with feasting and careful
+      assessment. The English read the hospitality as submission. It was
+      reconnaissance, conducted by both sides.
+    region: james-river
+    people: [christopher-newport, gabriel-archer, parahunt]
+    places: [the-falls, arrohateck]
+    fixed: false
+    significance: major
+    tags: [contact, diplomacy, exploration]
+    certainty: established
+    source_ids: [archer-relatyon-1607]
+
+  - id: first-assault-on-fort
+    date: "1607-05-26"
+    title: Two Hundred Warriors Attack the Settlement
+    summary: >-
+      While Newport is upriver, a large Powhatan force attacks the unfortified
+      camp. A boy is killed and eleven men wounded; the assault is broken only
+      by cannon fire from the ships. Within a fortnight the English have built
+      the triangular palisade Wingfield said they would not need.
+    region: james-river
+    people: [edward-maria-wingfield]
+    places: [james-fort]
+    fixed: true
+    significance: major
+    tags: [violence, fortification]
+    certainty: established
+    source_ids: [percy-observations-1608, smith-generall-historie-1624]
+
+  - id: fort-completed
+    date: "1607-06-15"
+    title: James Fort Finished
+    summary: >-
+      A triangular palisade of split logs enclosing roughly an acre, with a
+      bulwark at each corner mounting cannon. Inside are a storehouse, a church,
+      and rows of mud-and-stud houses. The excavated post trenches match the
+      shape the colonists described, which is how the site was finally
+      identified in 1994.
+    region: james-river
+    people: []
+    places: [james-fort]
+    fixed: true
+    significance: major
+    tags: [fortification, building]
+    certainty: established
+    source_ids: [kelso-buried-truth-2006, percy-observations-1608]
+
+  - id: newport-departs-1607
+    date: "1607-06-22"
+    title: Newport Sails for England
+    summary: >-
+      Newport leaves with both larger ships, taking most of the remaining ship's
+      provisions and a cargo of worthless mica-flecked ore that the gentlemen
+      are convinced is gold. About 104 colonists remain, entering summer with
+      depleted stores.
+    region: james-river
+    people: [christopher-newport]
+    places: [james-fort]
+    fixed: true
+    significance: major
+    tags: [supply, departure]
+    certainty: established
+    source_ids: [percy-observations-1608, smith-generall-historie-1624]
+
+  - id: summer-sickness-1607
+    date: "1607-07"
+    end_date: "1607-09"
+    title: The Sickening Season
+    summary: >-
+      Men begin dying at a rate of two and three a day. The causes compound:
+      the river beside the fort is tidal and turns brackish in the drought, so
+      those who drink it take in salt; typhoid and dysentery move through a camp
+      with no sanitation; the stores are spoiled and rationed to a pint of
+      wheat and barley a day, boiled. Percy records the deaths one by one. By
+      September roughly half the colony is dead.
+    region: james-river
+    people: [george-percy, bartholomew-gosnold]
+    places: [james-fort, james-river-mouth]
+    fixed: true
+    significance: pivotal
+    tags: [disease, famine, mortality]
+    certainty: established
+    source_ids: [percy-observations-1608, stahle-drought-1998, kelso-buried-truth-2006]
+
+  - id: gosnold-dies
+    date: "1607-08-22"
+    title: Bartholomew Gosnold Dies
+    summary: >-
+      The captain who had done more than anyone to organise the expedition dies
+      of the summer sickness and is buried with a ceremonial staff, which is how
+      archaeologists identified his likely grave in 2003. He was the one
+      councillor both factions trusted; with him gone the Council splits open.
+    region: james-river
+    people: [bartholomew-gosnold]
+    places: [james-fort]
+    fixed: true
+    significance: major
+    tags: [death, leadership]
+    certainty: established
+    source_ids: [percy-observations-1608, kelso-buried-truth-2006]
+
+  - id: wingfield-deposed
+    date: "1607-09-10"
+    title: Wingfield Deposed
+    summary: >-
+      The surviving councillors depose Wingfield, accusing him of hoarding food
+      from the common store while men starved. John Ratcliffe takes the
+      presidency. Wingfield's own defence, written later, is the only account
+      from his side.
+    region: james-river
+    people: [edward-maria-wingfield, john-ratcliffe, john-smith]
+    places: [james-fort]
+    fixed: true
+    significance: major
+    tags: [politics, leadership, conflict]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, kupperman-jamestown-project-2007]
+
+  - id: autumn-trade-1607
+    date: "1607-10"
+    end_date: "1607-11"
+    title: Corn from the River Towns
+    summary: >-
+      With the harvest in, Powhatan towns along the James begin trading maize to
+      the English, and the dying slows. Smith conducts most of these voyages.
+      The colony survives its first year on Powhatan agriculture, in a drought
+      year when that surplus was not easily spared.
+    region: james-river
+    people: [john-smith]
+    places: [kecoughtan, weyanoke, james-fort]
+    fixed: true
+    significance: pivotal
+    tags: [trade, food, contact]
+    certainty: established
+    source_ids: [smith-true-relation-1608, rountree-powhatan-1989, stahle-drought-1998]
+
+  - id: smith-captured
+    date: "1607-12"
+    title: Smith Taken on the Chickahominy
+    summary: >-
+      Opechancanough's hunting party takes Smith prisoner on the Chickahominy
+      River, killing the men with him. He is displayed through several towns and
+      brought to Wahunsenacawh at Werowocomoco, where he is questioned closely
+      about English intentions and the great guns.
+    region: york-river
+    people: [john-smith, opechancanough, wahunsenacawh]
+    places: [werowocomoco, chickahominy-river]
+    fixed: true
+    significance: pivotal
+    tags: [contact, captivity, diplomacy]
+    certainty: established
+    source_ids: [smith-true-relation-1608, smith-generall-historie-1624]
+
+  - id: pocahontas-rescue
+    date: "1607-12"
+    title: The Rescue That May Not Have Happened
+    summary: >-
+      In the Generall Historie of 1624, Smith describes being laid on a stone
+      with clubs raised over him, and Pocahontas, then about eleven, throwing
+      herself across his body to save him. His own 1608 account of the same
+      captivity, written months after it, contains nothing of the kind. Some
+      historians read the 1624 version as invention; others as a real adoption
+      ritual Smith misread at the time and dramatized later. The pack treats it
+      as contested and the story will not assert it as fact.
+    region: york-river
+    people: [john-smith, pocahontas, wahunsenacawh]
+    places: [werowocomoco]
+    fixed: false
+    significance: major
+    tags: [contested, contact, legend]
+    certainty: contested
+    note: >-
+      Present this to the player as a genuine historiographical dispute, not as
+      a debunking. What is certain is that Smith was captured, brought before
+      Wahunsenacawh, and released. What happened in that room is not.
+    source_ids: [smith-true-relation-1608, smith-generall-historie-1624, rountree-three-lives-2005]
+
+  - id: smith-released
+    date: "1608-01-02"
+    title: Smith Returns to the Fort
+    summary: >-
+      Smith is released and escorted back to Jamestown, where he finds the
+      colony reduced to about 38 men. He is promptly arrested by the Council for
+      the deaths of the men taken with him, and is saved from hanging by the
+      arrival of Newport's ship the same evening.
+    region: james-river
+    people: [john-smith, christopher-newport]
+    places: [james-fort]
+    fixed: true
+    significance: major
+    tags: [leadership, conflict, supply]
+    certainty: established
+    source_ids: [smith-true-relation-1608, smith-generall-historie-1624]
+
+  - id: first-supply
+    date: "1608-01-02"
+    title: The First Supply
+    summary: >-
+      Newport returns with about a hundred new colonists and provisions. The
+      newcomers include more gentlemen and two goldsmiths, and much of the
+      spring is wasted loading another cargo of worthless ore. Smith calls it
+      the season when there was "no talke, no hope, no worke, but dig gold,
+      wash gold, refine gold."
+    region: james-river
+    people: [christopher-newport, john-smith]
+    places: [james-fort]
+    fixed: true
+    significance: major
+    tags: [supply, arrival, gold]
+    certainty: established
+    source_ids: [smith-true-relation-1608, smith-generall-historie-1624]
+
+  - id: fort-fire-1608
+    date: "1608-01-07"
+    title: The Fort Burns
+    summary: >-
+      Five days after the supply arrives, fire takes most of the fort: the
+      church, the storehouse, and nearly all the houses, along with much of the
+      provisions just landed. The men sleep in the open through the rest of a
+      hard winter.
+    region: james-river
+    people: []
+    places: [james-fort]
+    fixed: true
+    significance: major
+    tags: [disaster, fire]
+    certainty: established
+    source_ids: [smith-true-relation-1608, kelso-buried-truth-2006]
+
+  - id: second-supply
+    date: "1608-10"
+    title: The Second Supply, and the First Two Women
+    summary: >-
+      Newport arrives with about seventy more colonists, among them Mistress
+      Forrest and her maid Anne Burras, the first Englishwomen in Virginia, and
+      a party of Polish and German craftsmen brought to make glass, pitch, tar
+      and potash. The Company wants a commodity; the craftsmen are the first
+      serious attempt to manufacture one.
+    region: james-river
+    people: [christopher-newport, anne-burras, mistress-forrest]
+    places: [james-fort, glasshouse]
+    fixed: true
+    significance: major
+    tags: [supply, women, industry]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, mccartney-immigrants-2007]
+
+  - id: smith-president
+    date: "1608-09-10"
+    title: Smith Takes the Presidency
+    summary: >-
+      Smith becomes president and imposes the rule that has followed his name
+      ever since: he that will not work shall not eat. He drills the men, sets
+      them to building and planting, and extracts corn from Powhatan towns by
+      threat when trade fails. Under him the death rate falls to almost nothing.
+      His methods also harden Wahunsenacawh against the English for good.
+    region: james-river
+    people: [john-smith, wahunsenacawh]
+    places: [james-fort]
+    fixed: true
+    significance: pivotal
+    tags: [leadership, labour, coercion]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, horn-land-as-god-made-it-2005, rountree-three-lives-2005]
+
+  - id: first-english-marriage
+    date: "1608-12"
+    title: Anne Burras Marries John Laydon
+    summary: >-
+      The first English marriage in Virginia. Their daughter Virginia Laydon,
+      born about 1609, is the first English child born in the colony to survive.
+    region: james-river
+    people: [anne-burras, john-laydon]
+    places: [james-fort]
+    fixed: true
+    significance: minor
+    tags: [women, family, society]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, mccartney-immigrants-2007]
+
+  - id: sea-venture-wrecked
+    date: "1609-07-28"
+    title: The Sea Venture Wrecks on Bermuda
+    summary: >-
+      The Third Supply of nine ships is scattered by a hurricane. The flagship,
+      carrying the new governor Sir Thomas Gates, Admiral Somers, Newport and
+      the colony's charter, is driven onto Bermuda. All aboard survive and spend
+      ten months building two small ships from cedar and salvage. Accounts of
+      the wreck reached London and are generally accepted as a source for
+      Shakespeare's Tempest.
+    region: atlantic-crossing
+    people: [thomas-gates, christopher-newport, william-strachey]
+    places: []
+    fixed: true
+    significance: pivotal
+    tags: [disaster, voyage, leadership]
+    certainty: established
+    source_ids: [strachey-historie-1612, horn-land-as-god-made-it-2005]
+
+  - id: smith-injured-departs
+    date: "1609-10"
+    title: Smith Burned and Sent Home
+    summary: >-
+      A powder bag ignites in Smith's lap while he sleeps in a boat, tearing
+      away flesh from his thigh. With no surgeon able to treat him and his
+      enemies now in the majority, he sails for England and never returns to
+      Virginia. Everything he later writes about the colony is written from
+      three thousand miles away.
+    region: james-river
+    people: [john-smith, george-percy]
+    places: [james-fort]
+    fixed: true
+    significance: pivotal
+    tags: [leadership, injury, departure]
+    certainty: established
+    source_ids: [smith-generall-historie-1624, percy-trewe-relacyon-1625]
+
+  - id: starving-time
+    date: "1609-11"
+    end_date: "1610-05"
+    title: The Starving Time
+    summary: >-
+      With Smith gone, the Powhatan blockade the fort and kill anyone who leaves
+      it. The colonists eat the horses, then the dogs and cats, then rats, then
+      boiled shoe leather and the starch from their ruffs. Percy records that
+      some dug up corpses. In 2012 the remains of a girl of about fourteen were
+      recovered from a refuse cellar with cut marks on her skull, jaw and shin
+      consistent with butchery after death. Of roughly 240 people in the fort in
+      November, about 60 are alive in May.
+    region: james-river
+    people: [george-percy, wahunsenacawh]
+    places: [james-fort]
+    fixed: true
+    significance: pivotal
+    tags: [famine, siege, mortality, cannibalism]
+    certainty: established
+    note: >-
+      That people starved and that some remains were butchered is established.
+      Exact population figures are reconstructed from conflicting accounts;
+      treat "about 240 down to about 60" as the best available estimate rather
+      than a count.
+    source_ids: [percy-trewe-relacyon-1625, owsley-jane-2013, kelso-truth-revealed-2017]
+
+  - id: gates-arrives-from-bermuda
+    date: "1610-05-24"
+    title: Two Cedar Ships Come Up the River
+    summary: >-
+      Gates arrives from Bermuda in Deliverance and Patience, expecting to
+      resupply a functioning colony. He finds the palisade gates off their
+      hinges, houses pulled down for firewood by men too weak to walk outside
+      the fort for wood, and sixty survivors. He carries almost no provisions:
+      Bermuda had fed his people, and there was nothing to spare for Virginia.
+    region: james-river
+    people: [thomas-gates, george-percy, william-strachey]
+    places: [james-fort]
+    fixed: true
+    significance: pivotal
+    tags: [arrival, famine]
+    certainty: established
+    source_ids: [strachey-historie-1612, percy-trewe-relacyon-1625]
+
+  - id: colony-abandoned
+    date: "1610-06-07"
+    title: Jamestown Is Abandoned
+    summary: >-
+      Gates decides the colony cannot be held. The survivors are put aboard and
+      the ships drop down the river for Newfoundland and home. Men wanted to
+      burn the fort behind them; Gates posted a guard to stop it. English
+      Virginia lasts three years and ends.
+    region: james-river
+    people: [thomas-gates, george-percy]
+    places: [james-fort]
+    fixed: true
+    significance: pivotal
+    tags: [abandonment, departure]
+    certainty: established
+    source_ids: [strachey-historie-1612, percy-trewe-relacyon-1625]
+
+  - id: de-la-warr-turns-them-back
+    date: "1610-06-08"
+    title: The Fleet Meets Them Coming Up
+    summary: >-
+      Fourteen miles downriver, the departing ships meet a longboat from Lord De
+      La Warr's fleet, arriving with three ships, provisions and 150 men. The
+      colonists are turned around and sailed back to the fort they abandoned the
+      previous day. There is no better single instance in the period of how
+      close the whole enterprise came to simply ending.
+    region: james-river
+    people: [thomas-west-de-la-warr, thomas-gates, george-percy]
+    places: [james-fort, mulberry-island]
+    fixed: true
+    significance: pivotal
+    tags: [arrival, reversal]
+    certainty: established
+    source_ids: [strachey-historie-1612, percy-trewe-relacyon-1625, horn-land-as-god-made-it-2005]
+
+  - id: paspahegh-massacre
+    date: "1610-08"
+    title: The Attack on Paspahegh
+    summary: >-
+      Percy leads seventy men against the Paspahegh town nearest the fort. They
+      kill about fifteen, burn the houses and the standing corn, and take the
+      weroance's wife and her children captive. The children are thrown into the
+      water and shot in the head as the boats withdraw; the woman is killed on
+      Percy's orders after his officers object to burning her. Percy records all
+      of it himself, in his own defence.
+    region: james-river
+    people: [george-percy, thomas-west-de-la-warr]
+    places: [paspahegh]
+    fixed: true
+    significance: pivotal
+    tags: [violence, atrocity, war]
+    certainty: established
+    note: >-
+      Report this. Do not stage it as a scene with a child on the page. The
+      historical weight is in the fact that the man who ordered it wrote it down
+      believing it would exonerate him.
+    source_ids: [percy-trewe-relacyon-1625, rountree-powhatan-1989]
+
+  - id: first-anglo-powhatan-war
+    date: "1610-08"
+    end_date: "1614-04"
+    title: The First Anglo-Powhatan War
+    summary: >-
+      Four years of raid and reprisal along the James. The English burn towns and
+      standing corn as policy, aiming to make the country untenable; the
+      Powhatan cut off stragglers and keep the English inside their palisades.
+      Neither side can finish it.
+    region: james-river
+    people: [thomas-west-de-la-warr, thomas-dale, wahunsenacawh, opechancanough]
+    places: [james-fort, paspahegh, henrico]
+    fixed: true
+    significance: pivotal
+    tags: [war, violence]
+    certainty: established
+    source_ids: [percy-trewe-relacyon-1625, rountree-powhatan-1989, horn-land-as-god-made-it-2005]
+
+  - id: dales-laws
+    date: "1611-05"
+    title: The Lawes Divine, Morall and Martiall
+    summary: >-
+      Sir Thomas Dale imposes martial law. Missing church twice is punished by
+      whipping; a third offence by six months in the galleys. Stealing from the
+      common store, killing livestock without leave, or trading privately with
+      the Powhatan can all bring death. Men are executed by hanging, shooting,
+      breaking on the wheel and burning. Under this code the colony stops dying,
+      which is the uncomfortable part.
+    region: james-river
+    people: [thomas-dale]
+    places: [james-fort, henrico]
+    fixed: true
+    significance: major
+    tags: [law, punishment, labour]
+    certainty: established
+    source_ids: [virginia-company-records, horn-land-as-god-made-it-2005]
+
+  - id: rolfe-plants-tobacco
+    date: "1612"
+    title: Rolfe Plants Spanish Tobacco
+    summary: >-
+      John Rolfe sows seed of Nicotiana tabacum, the sweeter Spanish variety
+      from the Orinoco, in place of the harsh native Nicotiana rustica. The first
+      commercial shipment reaches England in 1614 and sells. Virginia has found
+      the commodity it was chartered to produce, and it is a mild narcotic that
+      exhausts soil and demands land and labour without limit. Everything after
+      this in Virginia history follows from it.
+    region: james-river
+    people: [john-rolfe]
+    places: [james-fort, varina]
+    fixed: true
+    significance: pivotal
+    tags: [tobacco, economy, agriculture]
+    certainty: established
+    source_ids: [hamor-true-discourse-1615, horn-land-as-god-made-it-2005]
+
+  - id: pocahontas-captured
+    date: "1613-04"
+    title: Pocahontas Taken Hostage
+    summary: >-
+      Samuel Argall seizes Pocahontas on the Potomac with the help of the
+      Patawomeck, holding her against the return of English prisoners, arms and
+      corn. She is held over a year, taught English scripture, baptised Rebecca,
+      and is not returned.
+    region: james-river
+    people: [pocahontas, samuel-argall, wahunsenacawh]
+    places: [henrico, james-fort]
+    fixed: true
+    significance: pivotal
+    tags: [hostage, contact, religion]
+    certainty: established
+    source_ids: [hamor-true-discourse-1615, rountree-three-lives-2005]
+
+  - id: pocahontas-marries-rolfe
+    date: "1614-04-05"
+    title: The Marriage of Pocahontas and John Rolfe
+    summary: >-
+      Rolfe marries Pocahontas at Jamestown, having written a tortured letter to
+      Governor Dale explaining that he acts for the good of the plantation and
+      the conversion of an unbelieving creature, and not out of carnal
+      affection. The marriage ends the war. The eight years of quiet that follow
+      are called the Peace of Pocahontas, and they are the years in which
+      English tobacco plantations spread up both banks of the James.
+    region: james-river
+    people: [pocahontas, john-rolfe, thomas-dale, wahunsenacawh]
+    places: [james-fort]
+    fixed: true
+    significance: pivotal
+    tags: [marriage, peace, religion, contact]
+    certainty: established
+    source_ids: [rolfe-letter-1614, hamor-true-discourse-1615, rountree-three-lives-2005]
+
+  - id: pocahontas-dies
+    date: "1617-03"
+    title: Pocahontas Dies at Gravesend
+    summary: >-
+      Taken to England in 1616 and displayed as evidence that the Virginia
+      project could civilise and convert, she falls ill as her ship prepares to
+      sail home and dies at Gravesend, aged about twenty-one. Her son Thomas is
+      left behind in England.
+    region: london
+    people: [pocahontas, john-rolfe]
+    places: []
+    fixed: true
+    significance: major
+    tags: [death, england, contact]
+    certainty: established
+    source_ids: [rountree-three-lives-2005, horn-land-as-god-made-it-2005]
+
+  - id: powhatan-dies
+    date: "1618-04"
+    title: Wahunsenacawh Dies
+    summary: >-
+      The paramount chief who built Tsenacommacah from six inherited districts
+      into a confederation of some thirty dies in the spring of 1618. His
+      brother Opitchapam succeeds him nominally; the real authority passes to
+      Opechancanough, who has never believed the English could be lived with.
+    region: york-river
+    people: [wahunsenacawh, opechancanough, opitchapam]
+    places: [werowocomoco]
+    fixed: true
+    significance: pivotal
+    tags: [death, leadership, powhatan]
+    certainty: established
+    source_ids: [rountree-three-lives-2005, rountree-powhatan-1989]
+
+  - id: great-charter-headright
+    date: "1618-11"
+    title: The Great Charter and the Headright System
+    summary: >-
+      The Company grants fifty acres to anyone who pays his own passage, and
+      fifty more for every additional person he transports. Land in Virginia
+      becomes a function of how many bodies a man can move across the Atlantic.
+      The system that will fill the colony with indentured servants, and later
+      with enslaved people, is written down here as an incentive scheme.
+    region: london
+    people: [edwin-sandys]
+    places: []
+    fixed: true
+    significance: pivotal
+    tags: [land, labour, company, policy]
+    certainty: established
+    source_ids: [virginia-company-records, horn-1619-2018]
+
+  - id: first-assembly
+    date: "1619-07-30"
+    title: The First General Assembly
+    summary: >-
+      Twenty-two burgesses, two from each of eleven settlements, meet with the
+      governor and council in the choir of the church at Jamestown. It is the
+      first representative assembly in English America. They sit for five days
+      in August heat, one member dies of the sickness, and they legislate on
+      tobacco prices, drunkenness, idleness, and the instruction of Powhatan
+      children in English religion.
+    region: james-river
+    people: [george-yeardley, john-pory]
+    places: [james-fort, jamestown-church]
+    fixed: true
+    significance: pivotal
+    tags: [government, representation, law]
+    certainty: established
+    source_ids: [assembly-proceedings-1619, horn-1619-2018]
+
+  - id: first-africans-arrive
+    date: "1619-08"
+    title: The White Lion at Point Comfort
+    summary: >-
+      An English privateer sailing under a Dutch letter of marque puts in at
+      Point Comfort with, in John Rolfe's words, "20. and odd Negroes," which
+      the governor and cape merchant buy for provisions. They had been taken
+      from the Portuguese slave ship Sao Joao Bautista, bound from Luanda to
+      Vera Cruz, and they came from the kingdom of Ndongo in West Central
+      Africa. The Treasurer arrives days later with more. These are the first
+      documented Africans in English North America.
+    region: james-river
+    people: [john-rolfe, george-yeardley]
+    places: [point-comfort, james-fort]
+    fixed: true
+    significance: pivotal
+    tags: [slavery, africa, labour, arrival]
+    certainty: established
+    note: >-
+      What is established: who they were, where they were taken from, how they
+      arrived, and that they were exchanged for provisions. What is contested:
+      their precise legal status in a colony that had not yet written slavery
+      into law. Some were later recorded holding property and one, Anthony
+      Johnson, land and servants of his own. Virginia's statutory slavery comes
+      decades later. Do not resolve this into either "they were slaves" or "they
+      were indentured servants" — the ambiguity is the historical finding, and
+      it never made them free to leave.
+    source_ids: [rolfe-letter-1619, sluiter-20-and-odd-1997, thornton-african-experience-1998, horn-1619-2018]
+
+  - id: maids-for-wives
+    date: "1620"
+    end_date: "1621"
+    title: The Company Ships Women
+    summary: >-
+      The Virginia Company transports some ninety women as prospective wives,
+      their passage to be repaid by any planter who marries one, at 120 pounds
+      of best leaf tobacco. The Company is explicit that a colony of men without
+      families will not hold. A woman's transport is priced in the crop.
+    region: james-river
+    people: [edwin-sandys]
+    places: [james-fort]
+    fixed: true
+    significance: major
+    tags: [women, society, tobacco, company]
+    certainty: established
+    source_ids: [virginia-company-records, horn-1619-2018]
+
+  - id: powhatan-uprising-1622
+    date: "1622-03-22"
+    title: The Rising of 1622
+    summary: >-
+      Opechancanough launches a coordinated assault along both banks of the
+      James at once. Warriors enter the scattered plantations unarmed, as they
+      had done daily for eight years of peace, sat to breakfast, then took up
+      whatever tools were to hand. About 347 English die in a morning, roughly a
+      quarter of the colony. Jamestown itself is warned in the night by a
+      Powhatan youth named Chanco living in an English household, and holds. It
+      is the answer to eight years of plantations spreading up the river, and
+      the English use it as licence for a war of extermination.
+    region: james-river
+    people: [opechancanough, john-rolfe, chanco]
+    places: [james-fort, henrico, martins-hundred]
+    fixed: true
+    significance: pivotal
+    tags: [violence, war, uprising]
+    certainty: established
+    note: >-
+      The casualty figure of 347 comes from a Company list of the dead and is
+      about as firm as any number in this pack. Chanco's warning is attested but
+      the details accreted over time; treat the warning as established and the
+      dialogue around it as reconstructed.
+    source_ids: [virginia-company-records, smith-generall-historie-1624, rountree-powhatan-1989]
+
+  - id: charter-revoked
+    date: "1624-05-24"
+    title: The Company Dissolved
+    summary: >-
+      After a royal commission into the colony's mortality — some six thousand
+      people sent since 1607, and about twelve hundred alive — James I revokes
+      the charter. Virginia becomes a royal colony. The joint-stock experiment
+      is over; the tobacco plantations, the headright system and the assembly it
+      created all remain.
+    region: london
+    people: [edwin-sandys]
+    places: []
+    fixed: true
+    significance: pivotal
+    tags: [company, politics, end]
+    certainty: established
+    source_ids: [virginia-company-records, horn-land-as-god-made-it-2005]
